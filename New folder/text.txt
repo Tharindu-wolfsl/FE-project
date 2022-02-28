@@ -1,0 +1,105 @@
+会員サービス
+.section-1 .main-bar .title {
+  position: absolute;
+  width: 275px;
+  height: 131px;
+  left: 90px;
+  top: 124px;
+}
+
+.section-1 .title label.title_name {
+  position: absolute;
+  width: 192px;
+  height: 64px;
+  left: 90px;
+  top: 191px;
+
+  /* PC/EN/Title 64 */
+
+  font-family: Sora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100%;
+  /* identical to box height, or 64px */
+
+  /* Kon */
+
+  color: #373f66;
+}
+.section-1 .main-bar .title {
+  position: absolute;
+  width: 275px;
+  height: 131px;
+  left: 90px;
+  top: 124px;
+}
+
+.section-1 .title img {
+  position: absolute;
+  width: 122px;
+  height: 68px;
+  left: 243px;
+  top: 124px;
+}
+
+.section-1 .main-bar .content {
+  /* Rectangle 136 */
+
+  position: absolute;
+  width: 700px;
+  height: 594px;
+  left: 90px;
+  top: 285px;
+
+  /* White */
+
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+.section-1 .main-bar .content .img {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  left: 90px;
+  top: 285px;
+
+  border-radius: 15px 15px 0px 0px;
+}
+.carousel-control-prev {
+  position: absolute;
+  background-image: url("/assets/Group\ 125921.png");
+  background-repeat: no-repeat;
+  top: 170px;
+  left: -0.5%;
+}
+.carousel-control-next {
+  position: absolute;
+  background-image: url("/assets/Group\ 125920.png ");
+  background-repeat: no-repeat;
+  top: 170px;
+  right: -10.1%;
+}
+.section-1 .main-bar .content h3 {
+  position: absolute;
+  width: 660px;
+  height: 69px;
+  left: 110px;
+  top: 705px;
+
+  /* PC/JP/24px Bold */
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+}
