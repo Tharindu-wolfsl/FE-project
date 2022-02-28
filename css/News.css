@@ -28,9 +28,12 @@ a {
 }
 
 .container {
+
   position: relative;
-  width: 86.76%;
+ 
+  width: 100%;
   margin: auto;
+  background-color: red;
 }
 .header {
   position: absolute;
@@ -101,3 +104,9 @@ a {
 }
 
 /* Section-1 */
+.section-1 .main-bar .title {
+  position: absolute;
+  margin-top: 124px;
+  left: 0;
+}
+.
