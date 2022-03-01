@@ -22,6 +22,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #373f66;
 }
 
 .container {
@@ -229,7 +230,7 @@ a {
   margin: 0;
 }
 .side-bar .content-box h4 {
-  font-family: Noto Sans JP;
+  font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
   display: inline-block;
   width: 180px;
@@ -275,4 +276,102 @@ a {
 
   right: 10px;
   bottom: 15px;
+}
+
+/* section-2 */
+
+.section-2 {
+  margin-top: 1000px;
+  margin-bottom: 1000px;
+}
+
+.section-2 .articles {
+  position: relative;
+}
+.section-2 .articles .title {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  padding: 4px 0;
+}
+.section-2 .articles .title .icon {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 15px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-image: url("/assets/Articles/Rectangle\ 363.png");
+}
+.section-2 .articles .title h3 {
+  font-weight: bolder;
+  font-size: 32px;
+
+  margin-left: 30px;
+  /* identical to box height, or 48px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+}
+.section-2 .header {
+  position: relative;
+  top: 60px;
+  background: #ffffff;
+  border-radius: 15px;
+  height: 80px;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.section-2 .header .nav-items {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  left: 92px;
+  right: 92px;
+  top: 28px;
+  bottom: 28px;
+  box-sizing: content-box;
+}
+.section-2 .header .nav-items li {
+  float: left;
+}
+/* .section-2 hr {
+  position: relative;
+  margin: auto;
+  height: 2px;
+  width: 98%;
+  color: black;
+  top: 60px;
+} */
+.section-2 .header .nav-items li a {
+  padding: 25px 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Noto Sans JP", sans-serif;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.08em;
+  border-radius: 1px;
+
+  /* Green */
+}
+.section-2 .header .nav-items li a:hover {
+  /* Green */
+  color: #4ac0b1;
+  border-bottom: 4px #4ac0b1 solid;
+}
+
+.active {
+  color: #4ac0b1;
+  border-bottom: 4px #4ac0b1 solid;
 }
