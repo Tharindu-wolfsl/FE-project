@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+:root {
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 
 * {
   margin: 0;
@@ -23,8 +28,6 @@ a {
   position: relative;
   width: 87%;
   margin: auto;
-
-  background-color: rgba(255, 0, 0, 0.108);
 }
 
 .header {
@@ -112,8 +115,164 @@ a {
   height: 68px;
   margin-left: 121px;
 }
-.section-1 .content {
+.section-1 .main-bar .content {
+  position: absolute;
   height: 594px;
   background-color: white;
   width: 700px;
+  top: 200px;
+  left: 0;
+}
+.section-1 .content .carousel {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.section-1 .content .carousel .carousel-inner {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.section-1 .content .carousel .carousel-item img {
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+.carousel-control-prev {
+  position: absolute;
+  background-image: url("/assets/Group\ 125921.png");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 170px;
+}
+.carousel-control-next {
+  position: absolute;
+  background-image: url("/assets/Group\ 125920.png");
+  background-repeat: no-repeat;
+
+  top: 170px;
+  left: 660px;
+}
+.section-1 .content h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 20px 10px;
+}
+.section-1 .content .read-more {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+
+  width: 120px;
+}
+.section-1 .content .read-more img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.section-1 .content .read-more p {
+  font-family: "Noto Sans JP", sans-serif;
+
+  font-size: 16px;
+}
+.section-1 .content .date p {
+  font-family: Sora, sans-serif;
+
+  font-size: 16px;
+  line-height: 150%;
+  color: #444444;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+.section-1 .content .share img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 540px;
+}
+
+.section-1 .side-bar {
+  position: absolute;
+  right: 0;
+  width: 420px;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  height: 594px;
+  top: 200px;
+}
+
+.side-bar .content-box {
+  position: relative;
+  display: flex;
+
+  margin: 30px 30px 40px 30px;
+  width: 360px;
+  height: 104px;
+
+  background: #f9f9f9;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 5px;
+}
+.side-bar .content-box img {
+  margin: 0;
+}
+.side-bar .content-box h4 {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  display: inline-block;
+  width: 180px;
+
+  font-weight: bold;
+  font-size: 12px;
+  margin: 10px 10px 50px 10px;
+
+  /* or 18px */
+
+  /* Kon */
+
+  color: #373f66;
+}
+.side-bar .content-box .read-more {
+  position: absolute;
+  z-index: 1;
+  width: 160px;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+
+  top: 60px;
+  left: 195px;
+  /* identical to box height, or 18px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+
+  opacity: 0.6;
+}
+.side-bar .content-box .read-more .arrow {
+  position: absolute;
+  flex-direction: row;
+  background-image: url("/assets/20px/right-arrow.png");
+  width: 20px;
+  height: 20px;
+
+  right: 10px;
+  bottom: 15px;
 }
