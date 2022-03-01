@@ -362,6 +362,7 @@ a {
 
   letter-spacing: 0.08em;
   border-radius: 1px;
+  transition: 0.25s;
 
   /* Green */
 }
