@@ -22,6 +22,13 @@ body {
   overflow-x: hidden;
 }
 
+.checkbox {
+  display: none;
+}
+#check {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #373f66;
@@ -1058,4 +1065,36 @@ a {
   line-height: 150%;
   font-weight: 480;
   color: #000000;
+}
+@media only screen and (min-device-width: 374px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 344px;
+    margin: 16px auto;
+    background-color: green;
+    padding: 0;
+  }
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  .header .logo {
+    width: 28px;
+    height: 28px;
+    margin: auto 0;
+  }
+  header .header {
+    background: red;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 28px;
+  }
+  .header .header .section-1 .side-bar {
+    display: none;
+  }
 }
