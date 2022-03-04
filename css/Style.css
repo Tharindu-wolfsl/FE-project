@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Sora:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Sora:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sora:wght@600&display=swap");
 :root {
   --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -26,7 +26,7 @@ a {
   text-decoration: none;
   color: #373f66;
 }
-.clear{
+.clear {
   clear: both;
 }
 .container {
@@ -43,10 +43,13 @@ a {
 .header .logo {
   position: absolute;
   background-image: url("/assets/image\ 49.png");
-  width: 27px;
-  height: 27px;
-  top: 17.5%;
-  bottom: 17.5%;
+  width: 30px;
+  height: 30px;
+  top: 18%;
+  bottom: 18%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   left: 0;
 }
 
@@ -76,7 +79,7 @@ a {
 .header .nav-btn {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 4px;
 }
 .header .nav-btn1 {
   width: 130px;
@@ -98,6 +101,11 @@ a {
   font-size: 12px;
 }
 
+/* section-1 */
+
+.section-1 {
+  margin-bottom: 600px;
+}
 .section-1 .main-bar .title {
   position: absolute;
   width: 275px;
@@ -108,7 +116,7 @@ a {
 }
 .section-1 .main-bar .title label.title_name {
   font-style: normal;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 64px;
   line-height: 100%;
 
@@ -122,7 +130,7 @@ a {
   margin-left: 121px;
 }
 .section-1 .main-bar .content {
-  position: relative;
+  position: absolute;
 
   background-color: white;
   width: 700px;
@@ -177,13 +185,16 @@ a {
   margin: 20px 20px;
 }
 .section-1 .content .read-more {
-  margin: 0 0 0 20px;
+  margin: 0 0 10px 20px;
   display: flex;
   flex-direction: row;
   color: #373f66;
-  width: 130px;
+  width: 110px;
+  height: 25px;
 
-  padding: 0 0 0 0;
+  padding: 0;
+
+  border-bottom: 1px #373f66d5 solid;
 }
 
 .section-1 .content .read-more img {
@@ -197,7 +208,6 @@ a {
   color: #373f66;
   font-size: 16px;
   padding: 0;
-  border-bottom: 2px #373f66 solid;
 }
 .section-1 .content .date p {
   font-family: Sora, sans-serif;
@@ -234,7 +244,10 @@ a {
   margin: 30px 30px 40px 30px;
   width: 360px;
   height: 104px;
-  border: 1px #38f9d7 solid;
+  /* border: 1px #38f9d7 solid; */
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, white, cyan) 0.5;
 
   background: #f9f9f9;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
@@ -321,7 +334,7 @@ a {
   background-image: url("/assets/Articles/Rectangle\ 363.png");
 }
 .section-2 .articles .title h3 {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 32px;
 
   margin-left: 20px;
@@ -340,7 +353,7 @@ a {
   border-radius: 15px;
   height: 80px;
   width: 100%;
-
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -355,18 +368,21 @@ a {
   top: 28px;
   bottom: 28px;
   box-sizing: content-box;
+  z-index: 1;
 }
 .section-2 .header .nav-items li {
   float: left;
 }
-/* .section-2 hr {
-  position: relative;
-  margin: auto;
-  height: 2px;
+.section-2 hr {
+  position: absolute;
+
+  height: 1px;
   width: 98%;
-  color: black;
-  top: 60px;
-} */
+  color: rgb(0, 0, 0.2);
+  top: 124px;
+  z-index: 0;
+  left: 12px;
+}
 .section-2 .header .nav-items li a {
   padding: 25px 15px;
   font-family: "Noto Sans JP", sans-serif;
@@ -564,8 +580,8 @@ a {
   position: relative;
 }
 
- .section-3 .popular-articles .title {
-position: relative;
+.section-3 .popular-articles .title {
+  position: relative;
   left: 0;
   bottom: 60px;
   padding: 4px 0;
@@ -581,7 +597,7 @@ position: relative;
   background-image: url("/assets/Articles/Rectangle\ 363.png");
 }
 .section-3 .popular-articles .title h3 {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 32px;
 
   margin-left: 20px;
@@ -606,6 +622,7 @@ position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: 0.5s;
 }
 .popular-articles .slide-item {
   position: relative;
@@ -682,7 +699,10 @@ position: relative;
   right: 20px;
   display: flex;
   flex-direction: row;
-  width: 100px;
+  width: 92px;
+  border-bottom: 1px #373f66 solid;
+  padding: 0;
+  height: 18px;
 }
 .popular-articles .slide-item .other .read-more label {
   font-family: "Noto Sans JP", sans-serif;
@@ -693,6 +713,7 @@ position: relative;
   /* identical to box height, or 18px */
 
   letter-spacing: 0.08em;
+  margin: auto 0;
 
   /* Kon */
 
@@ -702,7 +723,8 @@ position: relative;
   background-image: url("/assets/20px/right-arrow.png");
   height: 20px;
   width: 20px;
-  margin-left: 12px;
+  margin-left: 5px;
+  margin-right: 0;
 }
 
 .popular-articles .nav-btns {
@@ -729,19 +751,16 @@ position: relative;
 /* section-4 */
 
 .section-4 {
-  margin-top:60px;
+  margin-top: 60px;
   margin-bottom: 200px;
   position: relative;
 }
-
-
 
 .section-4 .title {
   position: relative;
   left: 0;
   bottom: 60px;
   padding: 4px 0;
-  
 }
 .section-4 .title .icon {
   position: absolute;
@@ -753,7 +772,7 @@ position: relative;
   background-image: url("/assets/Articles/Rectangle\ 363.png");
 }
 .section-4 .title h3 {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 32px;
 
   margin-left: 20px;
@@ -766,16 +785,14 @@ position: relative;
   color: #373f66;
 }
 
-.section-4 .image-raw{
-
+.section-4 .image-raw {
   width: 100%;
 
   display: flex;
   flex-direction: raw;
   justify-content: space-between;
 }
-.section-4 .img-raw .pic{
-
+.section-4 .img-raw .pic {
   position: relative;
 
   width: 350px;
@@ -786,324 +803,259 @@ position: relative;
   border-radius: 15px;
 }
 
-
-
 /* footer */
 
-#footer{
+#footer {
   position: relative;
   overflow: hidden;
 
-
   width: 100%;
   height: 658px;
-  background-image: url('/assets/Footer/Mask\ Group.png');
+  background-image: url("/assets/Footer/Mask\ Group.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
- 
 }
-#footer .footer-content{
-
+#footer .footer-content {
   position: relative;
   top: 50px;
-
 }
-.footer-content .main-content{
-
+.footer-content .main-content {
   width: 75%;
-  
-
 }
-.row-1,.row-2{
-margin: 20px 0;
+.row-1,
+.row-2 {
+  margin: 20px 0;
 }
 
-#footer .footer-content li a{
+#footer .footer-content li a {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
 
-font-family: "Noto Sans JP", sans-serif;
-font-style: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-decoration: none;
+  font-weight: 100;
+  /* identical to box height, or 18px */
 
-font-size: 12px;
-line-height: 150%;
-text-decoration: none;
-font-weight: 100;
-/* identical to box height, or 18px */
+  letter-spacing: 0.1em;
 
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
+  color: #ffffff;
 }
 #footer .footer-content li {
+  margin-bottom: 3px;
+  list-style: none;
 
- 
-margin-bottom:  3px;
- list-style: none;
-
- left: 0;
+  left: 0;
 }
-#footer .footer-content label{
-
+#footer .footer-content label {
   font-family: "Sora", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   /* identical to box height, or 24px */
-  
+
   letter-spacing: 0.08em;
-  
-  color: #FFFFFF;
+
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-#footer .footer-content ul{
+#footer .footer-content ul {
   position: relative;
 
   list-style: none;
   left: 0;
   padding: 0;
- 
-
-
 }
 
-.footer-content .main-content .row-1{
-
+.footer-content .main-content .row-1 {
   position: relative;
-  
-
 }
-.col-1,.col-2,.col-3{
-position: relative;
- float: left;
-box-sizing: border-box;
+.col-1,
+.col-2,
+.col-3 {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
 }
-.col-1{
-
+.col-1 {
   width: 30%;
 }
-.col-2{
-
+.col-2 {
   width: 40%;
 }
 
-.col-3{
-
+.col-3 {
   width: 30%;
 }
 
-
-#footer .bottom-footer{
-
-  
-position: relative;
-top: 55px;
-bottom: 0;
+#footer .bottom-footer {
+  position: absolute;
+  top: 535px;
+  align-items: center;
   height: 100px;
   width: 100%;
-  border-top:1px solid #FFFFFF; ;
-  
+  border-top: 1px solid #ffffff;
 }
-#footer .bottom-footer .ft-content{
+#footer .bottom-footer .ft-content {
+  display: flex;
 
- display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
- flex-direction:row;
- justify-content: space-between;
+  padding: 30px 0;
+}
+.ft-content .social {
+  margin: auto 10px;
+}
+.ft-content .social img {
+  margin: 0 10px;
+}
 
- padding: 30px 0 ;
+#footer .footer-content .side-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+}
 
-    
-  }
-  .ft-content .social{
+.side-content .top-bar .logo {
+  background-image: url("/assets/Footer/image\ 71.png");
+  height: 109px;
 
-    margin: 0 10px;
-    
-  }
-  .ft-content .social img{
+  background-position: center center;
+}
+.side-content .top-bar .logo-cont {
+  display: flex;
+  flex-direction: row;
+  width: 230px;
+}
+.side-content .top-bar .logo img {
+  height: 40px;
+  width: 40px;
+  margin: 10px 10px;
+}
+.side-content .top-bar .logo .label-2 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 300px;
 
-    margin: 0 10px;
-    
-  }
+  letter-spacing: 0.05px;
 
+  padding: 0;
+  /* or 18px */
 
-  #footer .footer-content .side-content{
-    position:absolute;
-    right: 0;
-    top: 0;
-    width: 25%;
+  color: #f5f5f5;
+}
+.side-content .top-bar .logo span {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
 
-  }
+  color: #f5f5f5;
+}
 
-  .side-content .top-bar .logo{
+.side-content .top-bar button.fb-btn {
+  position: relative;
+  background-image: url("/assets/Footer/Group\ 125035.png");
+  width: 80px;
+  height: 30px;
+  left: 210px;
+  bottom: 100px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.side-content .top-bar button.learn-btn {
+  position: relative;
+  background-image: url("/assets/Footer/Group\ 125031.png");
+  width: 80px;
+  height: 30px;
+  left: 125px;
+  bottom: 40px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
-    background-image: url('/assets/Footer/image\ 71.png');
-    height: 109px;
+.bottom-bar {
+  position: relative;
+  height: 292px;
+  width: 100%;
+  background: #e2edfe;
+  overflow-x: hidden;
+  overflow-y: auto;
+  bottom: 15px;
+}
 
-    background-position: center center;
-  
-  }
-  .side-content .top-bar .logo-cont{
+.bottom-bar .top-img {
+  background-image: url("/assets/Footer/image\ 70.png");
+  width: 100%;
+  height: 159px;
+}
 
-      
-      display: flex;
-      flex-direction: row;
-      width: 230px;
-  }
-  .side-content .top-bar .logo img{
+.bottom-bar .title-3 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
 
-    height: 40px;
-    width: 40px;
-    margin:10px 10px;
-  }
-  .side-content .top-bar .logo .label-2{
-  font-family: "Sora",sans-serif;
-font-style:normal;
-font-weight: 100;margin-top: 10px;
-font-size: 12px;
-font-weight: 300px;
+.bottom-bar .logo {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
 
+  margin: 10px 10px 2px 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.bottom-bar .logo img {
+  height: 25px;
+  width: 25px;
+  margin: auto 0;
+}
 
+.bottom-bar .logo .fb-logo img {
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+}
 
-letter-spacing: 0.05px;
+.bottom-bar .content-bar {
+  margin: 0 10px;
+}
+.bottom-bar .content-bar .title-4 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 600;
 
-padding: 0;
-/* or 18px */
+  /* or 18px */
 
-
-color: #F5F5F5;
-
-  }
-  .side-content .top-bar .logo span{
-
-    font-family: "Sora",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 150%;
-    /* or 18px */
-    
-    
- 
-    
-    color: #F5F5F5;
-
-  }
-  
-  .side-content .top-bar button.fb-btn{
-    position: relative;
-    background-image: url('/assets/Footer/Group\ 125035.png');
-    width: 80px;
-    height: 30px;
-    left: 210px;
-    bottom: 100px;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .side-content .top-bar button.learn-btn{
-    position: relative;
-    background-image: url('/assets/Footer/Group\ 125031.png');
-    width: 80px;
-    height: 30px;
-    left: 125px;
-    bottom: 40px;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-
- .bottom-bar{
-    position: relative;
-    height: 292px;
-    width: 100%;
-    background: #E2EDFE;
-    overflow-x: hidden;
-    overflow-y: auto;
-    bottom: 15px;
-
-  }
-
-  .bottom-bar .top-img{
-
-
-    background-image: url('/assets/Footer/image\ 70.png');
-    width: 100%;
-    height: 159px;
-
-
-  }
-
-  .bottom-bar .title-3{
-    font-family: "Sora",sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-  }
-
-  .bottom-bar .logo {
-    float: left;
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-
-    margin: 10px 10px 2px 10px;
-    box-sizing: border-box;
-    justify-content: space-between;
-
-  }.bottom-bar .logo img {
-    height: 25px;
-    width: 25px;
-    margin:auto 0;
-  }
-  
-  .bottom-bar .logo .fb-logo img{
-
-    width: 40px;
-    height: 40px;
-    margin: auto 0;
-  
-  }
- 
-  .bottom-bar .content-bar {
-
-    
-    margin: 0 10px;
-  }
-  .bottom-bar .content-bar .title-4{
-
-    font-family: "Sora",sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    font-weight: 600;
-
-    /* or 18px */
-    
-    
-    color: #000000;
-
-  }
-  .bottom-bar .content-bar .cont-data{
-
-    margin-top: 15px;
-    /* or 18px */
-    
-    
-   
-
-  }
-  .cont-data span{
-
-    
-    font-family: "Sora",sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    font-weight: 480;
-    color: #000000;
-  }
+  color: #000000;
+}
+.bottom-bar .content-bar .cont-data {
+  margin-top: 15px;
+  /* or 18px */
+}
+.cont-data span {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 480;
+  color: #000000;
+}
