@@ -136,6 +136,14 @@ a {
   height: 68px;
   margin-left: 121px;
 }
+.section-1 .main-bar .nav-btns{
+  display: none;
+}
+
+.section-1 .main-bar .slide-section{
+  display: none;
+}
+
 .section-1 .main-bar .content {
   position: absolute;
 
@@ -1070,13 +1078,15 @@ a {
   body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   .container {
     width: 344px;
     margin: 16px auto;
-    background-color: green;
+
     padding: 0;
+    
   }
   header {
     padding: 0;
@@ -1088,13 +1098,193 @@ a {
     margin: auto 0;
   }
   header .header {
-    background: red;
+    
     width: 100%;
     margin: 0;
     padding: 0;
     height: 28px;
   }
-  .header .header .section-1 .side-bar {
+
+  .header .nav ul.nav-items{
+    /* position: fixed;
+    background-color: #05ae4850;
+    top: 44px;
+    width: 100%;
+    height: 100vh;
+    right: 100px;
+    display: flex;
+    flex-direction: column; */
+    display: none;
+
+
+  }
+  .header .nav-btn{
+    display: none;
+  }
+
+    /* Section1 */
+
+
+  .section-1{
+    margin-bottom: 500px;
+  }
+
+  .section-1 .main-bar .slide-section{
+
+    display: block;
+    position: absolute;
+    top: 180px;
+    height: 290px;
+  
+   width: 1060px;
+   
+  }
+  .section-1 .main-bar .slide-section #slide-bar1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.5s;
+  
+    width: 1060px;
+    height: 290px;
+  }
+
+  .section-1 .main-bar .slide-item {
+ 
+    width: 255px;
+    height: 290px;
+  
+  } 
+  .section-1 .main-bar .mobile-content {
+    position: relative;
+
+    background-color: white;
+    width: 255px;
+    height: 290px;
+    
+    border-radius: 15px;
+  }
+  .section-1 .mobile-content .carousel {
+    position: relative;
+    width: 255px;
+    height:140px;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .section-1 .mobile-content .carousel .carousel-inner {
+    position: relative;
+    width: 255px;
+    height:140px;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .section-1 .mobile-content .carousel .carousel-item img {
+    position: relative;
+    background-size: cover;
+    height: 150px;
+    width:100px;
+  }
+.section-1 .mobile-content h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 150%;
+  color: #373f66;
+  margin: 6px 10px;
+}
+.section-1 .mobile-content .read-more {
+  margin: 10px 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  color: #373f66;
+  width: 90px;
+  height: 20px;
+
+  padding: 0;
+
+  border-bottom: 1px #373f66d5 solid;
+}
+
+.section-1 .mobile-content .read-more img {
+  width: 20px;
+  height: 20px;
+
+  margin-left: 5px;
+  padding: 0;
+}
+.section-1 .mobile-content .read-more p {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #373f66;
+  font-size: 12px;
+  padding: 0;
+}
+.section-1 .mobile-content .date p {
+  font-family: Sora, sans-serif;
+  position: relative;
+  font-size: 12px;
+  line-height: 150%;
+  color: #444444;
+  opacity: 0.6;
+  top: 5px;
+  left: 10px;
+}
+.section-1 .mobile-content .share img {
+  position: relative;
+  width:20px;
+  height: 20px;
+  left: 225px;
+  bottom: 30px;
+
+}
+ .section-1 .main-bar .nav-btns{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 116px;
+  }
+
+  .main-bar .nav-btns #prev1 {
+    background-image: url("/assets/nav/Group\ 124404.png");
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
+  }
+ .main-bar .nav-btns #next1 {
+    background-image: url("/assets/nav/Group\ 124469.png");
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    border: none;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+
+  .section-1 .main-bar .title label.title_name{
+
+    font-size: 42px;
+
+  }
+  .section-1 .main-bar .title img {
+    width: 77px;
+    height: 44px;
+    margin-left: 90px;
+  }
+  .section-1 .main-bar .content{
+    display: none;
+  }
+  .section-1 .side-bar {
     display: none;
   }
 }
