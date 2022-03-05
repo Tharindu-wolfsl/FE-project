@@ -608,7 +608,7 @@ a {
 .section-3 .popular-articles .title .icon {
   position: absolute;
   left: 0;
-  top: 6ddpx;
+  top: 6px;
   width: 20px;
   height: 45px;
   background-repeat: no-repeat;
@@ -750,6 +750,7 @@ a {
   right: 0px;
   top: 0px;
 }
+
 .popular-articles .nav-btns #prev {
   background-image: url("/assets/nav/Group\ 124404.png");
   width: 50px;
@@ -765,6 +766,9 @@ a {
   margin: 0 15px;
   border: none;
   background-color: transparent;
+}
+.popular-articles .nav-btns-mobile {
+  display: none;
 }
 /* section-4 */
 
@@ -1435,7 +1439,61 @@ a {
     background-repeat: no-repeat;
   }
   .section-3 {
-    margin-top: 2300px;
+    margin-top: 2100px;
     margin-bottom: 300px;
+  }
+  .section-3 .popular-articles .title {
+    position: relative;
+    left: 0;
+    bottom: 35px;
+    padding: 4px 0;
+  }
+  .section-3 .popular-articles .title .icon {
+    width: 8px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+  }
+  .section-3 .popular-articles .title h3 {
+    font-size: 20px;
+  }
+  .popular-articles .nav-btns {
+    position: absolute;
+    right: 0px;
+    top: 12px;
+  }
+
+  .popular-articles .nav-btns #prev {
+    height: 26px;
+    width: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 5px;
+  }
+  .popular-articles .nav-btns #next {
+    height: 26px;
+    width: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 5px;
+  }
+  .popular-articles .slide-item {
+    position: relative;
+
+    width: 255px;
+    height: 290px;
+    /* White */
+
+    background: #ffffff;
+    border-radius: 15px;
+  }
+  .popular-articles .slide-item .pic img {
+    width: 255px;
+
+    /* White */
   }
 }
