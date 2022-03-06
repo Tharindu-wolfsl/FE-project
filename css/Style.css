@@ -1289,6 +1289,10 @@ a {
     top: 100px;
   }
 
+  .section-2 .title {
+    bottom: 32;
+  }
+
   .section-2 .articles .title h3 {
     font-size: 20px;
     left: 1px;
@@ -1440,12 +1444,12 @@ a {
   }
   .section-3 {
     margin-top: 2100px;
-    margin-bottom: 300px;
+    margin-bottom: 190px;
   }
   .section-3 .popular-articles .title {
     position: relative;
     left: 0;
-    bottom: 35px;
+    bottom: 32px;
     padding: 4px 0;
   }
   .section-3 .popular-articles .title .icon {
@@ -1485,7 +1489,7 @@ a {
     position: relative;
 
     width: 255px;
-    height: 290px;
+    height: 270px;
     /* White */
 
     background: #ffffff;
@@ -1495,5 +1499,70 @@ a {
     width: 255px;
 
     /* White */
+  }
+  .popular-articles .slide-item .content .desc {
+    width: 255px;
+    margin-top: 14px;
+  }
+  .popular-articles .slide-item .content .desc p {
+    font-size: 12px;
+    line-height: 150%;
+
+    width: 93%;
+    height: fit-content;
+    margin: 6px auto;
+  }
+  .popular-articles .slide-item .content .read-more {
+    border: none;
+    left: 218px;
+  }
+  .popular-articles .slide-item .content .read-more #rm-mobile {
+    display: none;
+  }
+  .popular-articles .slide-item .content .other .date label {
+    font-size: 12px;
+    left: 10;
+  }
+
+  .popular-articles .slide-section {
+    width: 1360px;
+
+    overflow-x: hidden;
+  }
+  .popular-articles .slide-bar-mobile {
+    width: 1360px;
+  }
+
+  .section-4 {
+    top: 0;
+  }
+
+  .section-4 .title {
+    bottom: 32;
+  }
+  .section-4 .title h3 {
+    font-size: 20px;
+    left: 1px;
+  }
+  .section-4 .title .icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-size: cover;
+    width: 8px;
+    height: 20px;
+    background-position: center center;
+  }
+
+  .section-4 .image-raw {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+  }
+  .section-4 .image-raw .pic img {
+    width: 100%;
   }
 }
