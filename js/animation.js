@@ -2,8 +2,8 @@
       const next=document.querySelector(".popular-articles .nav-btns #next");
       const prev=document.querySelector(".popular-articles .nav-btns #prev");
       const slider=document.querySelector("#slide-bar");
-     const mediaQuery1 = window.matchMedia('(min-device-width: 374px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2)')
-     const mediaQuery2 = window.matchMedia('(min-device-width: 669px)')
+     const mediaQuery1 = window.matchMedia('(min-device-width: 374px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2)');
+     const mediaQuery2 = window.matchMedia('(min-device-width: 669px)');
      // Check if the media query is true
      if (mediaQuery1.matches) {
 
