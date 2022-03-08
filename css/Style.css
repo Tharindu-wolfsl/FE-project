@@ -17,7 +17,9 @@ body {
   /* News */
 
   /* Off White */
-
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   background-color: #f9f9f9;
 }
 
@@ -1092,16 +1094,18 @@ a {
 /* Portrait and Landscape */
 /* Portrait */
 
-@media only screen and (min-device-width: 374px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 660px) {
   body {
     margin: 0;
     padding: 0;
+    border: none;
+    overflow-x: hidden;
 
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
   }
 
   .container {
-    width: 85%;
+    width: 80%;
     left: 0;
 
     margin: 16px auto;
@@ -1184,8 +1188,9 @@ a {
     position: absolute;
     top: 180px;
     height: 290px;
-
-    width: 1060px;
+    width: 115%;
+    overflow-y: clip;
+    overflow-x: hidden;
   }
   .section-1 .main-bar .slide-section #slide-bar1 {
     position: relative;
@@ -1413,14 +1418,14 @@ a {
   }
   .pagination .page-list li {
     display: inline-block;
-    padding: 2px 9px;
+    padding: 3px 9px;
     margin: 1px;
     border-radius: 50%;
   }
   .pagination .page-list a {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 10px;
 
     /* identical to box height, or 24px */
 
@@ -1498,6 +1503,11 @@ a {
     left: 0;
     bottom: 32px;
     padding: 4px 0;
+  }
+  .section-3 .popular-articles .slide-section {
+    width: 115%;
+    overflow-x: hidden;
+    overflow-y: clip;
   }
   .section-3 .popular-articles .title .icon {
     width: 8px;
@@ -1714,7 +1724,15 @@ a {
     transition: ease-in 0.5s;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 668px) and (max-width: 1366px) {
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    overflow-x: hidden;
+  }
+
   #image-raw {
     display: none;
   }
@@ -1770,6 +1788,12 @@ a {
     width: fit-content;
     height: fit-content;
     margin: auto 0;
+  }
+  .header .nav .nav-items li {
+    margin: 0px 5px;
+  }
+  .header .nav .nav-items li a {
+    font-size: 10px;
   }
   .header .login #login-drop {
     position: relative;
@@ -1887,17 +1911,15 @@ a {
     float: right;
   }
   .side-bar .content-box .read-more .arrow {
-    position: absolute;
-    float: right;
-    right: 60px;
-    top: 5px;
+    position: static;
+    background-color: #373f6641;
   }
   .side-bar .content-box .read-more p {
-    position: absolute;
-    font-size: 10px;
-    right: 120px;
-    margin-left: 0;
-    top: 5px;
+    position: static;
+    background-color: #373f6641;
+    text-align: center;
+    padding: 0;
+    width: fit-content;
   }
 
   /* .section2 */
@@ -1992,6 +2014,18 @@ a {
   .popular-articles #slide-bar {
     justify-content: start;
   }
+  .popular-articles .slide-hide-sec {
+    position: relative;
+    width: 110%;
+    height: fit-content;
+
+    padding: 0;
+    margin: auto 0;
+    border: none;
+    overflow-x: hidden;
+    top: 60px;
+  }
+
   .popular-articles .slide-item {
     position: relative;
 
