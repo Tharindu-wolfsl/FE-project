@@ -1104,7 +1104,7 @@ a {
     width: 85%;
     left: 0;
 
-    margin: 16px 16px 16px 16px;
+    margin: 16px auto;
     padding: 0;
   }
   header {
