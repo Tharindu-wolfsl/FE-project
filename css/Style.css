@@ -1419,7 +1419,7 @@ a {
   .pagination .page-list li {
     display: inline-block;
     padding: 3px 9px;
-    margin: 1px;
+    margin: 0.5px;
     border-radius: 50%;
   }
   .pagination .page-list a {
@@ -1429,7 +1429,7 @@ a {
 
     /* identical to box height, or 24px */
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0.001em;
 
     box-sizing: border-box;
     /* Kon */
@@ -2008,7 +2008,12 @@ a {
 
     text-align: center;
   }
-
+  .pagination .page-list li {
+    margin: auto 3px;
+  }
+  .pagination .page-list li a {
+    letter-spacing: 0.001px;
+  }
   /* .section-3 */
 
   .popular-articles #slide-bar {
