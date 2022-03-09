@@ -1094,7 +1094,7 @@ a {
 /* Portrait and Landscape */
 /* Portrait */
 
-@media only screen and (max-device-width: 660px) {
+@media (max-device-width: 852px) {
   body {
     margin: 0;
     padding: 0;
@@ -1724,7 +1724,7 @@ a {
     transition: ease-in 0.5s;
   }
 }
-@media only screen and (min-width: 668px) and (max-width: 1366px) {
+@media only screen and (min-width: 852px) and (max-width: 1366px) {
   body {
     margin: 0;
     padding: 0;
@@ -1790,10 +1790,10 @@ a {
     margin: auto 0;
   }
   .header .nav .nav-items li {
-    margin: 0px 5px;
+    margin: 0px 8px;
   }
   .header .nav .nav-items li a {
-    font-size: 10px;
+    font-size: 13px;
   }
   .header .login #login-drop {
     position: relative;
@@ -1885,7 +1885,7 @@ a {
     height: fit-content;
   }
   .side-bar .content-box h4 {
-    font-size: 11px;
+    font-size: 10px;
     top: 10px;
   }
 
@@ -1910,16 +1910,29 @@ a {
 
     float: right;
   }
+  .side-bar .content-box .read-more {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0;
+    left: 60%;
+  }
   .side-bar .content-box .read-more .arrow {
     position: static;
-    background-color: #373f6641;
+
+    margin: auto 8px;
   }
   .side-bar .content-box .read-more p {
     position: static;
-    background-color: #373f6641;
+
     text-align: center;
     padding: 0;
     width: fit-content;
+    font-size: 8px;
+    margin: auto 8px;
   }
 
   /* .section2 */
@@ -2029,6 +2042,7 @@ a {
     border: none;
     overflow-x: hidden;
     top: 60px;
+    overflow-y: clip;
   }
 
   .popular-articles .slide-item {
