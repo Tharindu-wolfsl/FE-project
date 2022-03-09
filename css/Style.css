@@ -21,6 +21,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #f9f9f9;
+  background-color: rgba(255, 0, 0, 0.24);
 }
 
 .checkbox {
@@ -653,10 +654,9 @@ a {
 .popular-articles .slide-section {
   position: relative;
 
-  width: 1950px;
-
-  top: 60px;
+  width: 105%;
   overflow-x: hidden;
+  overflow-y: clip;
 }
 .popular-articles #slide-bar {
   position: relative;
@@ -1470,7 +1470,7 @@ a {
     position: absolute;
     left: 25px;
     width: 90%;
-    bottom: 20px;
+    bottom: 15px;
   }
   .article-content .article-item .pic img {
     width: 100%;
@@ -1505,7 +1505,7 @@ a {
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
-    width: 115%;
+    width: 113%;
     overflow-x: hidden;
     overflow-y: clip;
   }
@@ -1617,7 +1617,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 600px;
+    height: 700px;
   }
   .section-4 .image-raw .pic img {
     width: 100%;
@@ -1724,7 +1724,7 @@ a {
     transition: ease-in 0.5s;
   }
 }
-@media only screen and (min-width: 852px) and (max-width: 1366px) {
+@media only screen and (min-width: 852px) and (max-width: 1359px) {
   body {
     margin: 0;
     padding: 0;
@@ -1830,7 +1830,7 @@ a {
   }
   .section-1 .main-bar .content {
     width: 60%;
-    height: fit-content;
+    height: 100%;
   }
   .section-1 .content .carousel {
     width: 100%;
@@ -1841,9 +1841,9 @@ a {
     height: fit-content;
   }
   .section-1 .content .carousel .carousel-item img {
-    width: 100%;
+    width: fit-content;
     height: fit-content;
-    top: 5px;
+    top: 3px;
   }
 
   .carousel-control-prev {
@@ -2151,5 +2151,247 @@ a {
 
   .bottom-bar {
     height: 589px;
+  }
+}
+@media (min-device-width: 1360px) {
+  body {
+    width: 100%;
+    overflow-x: clip;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    left: 0;
+
+    margin: 20px auto;
+    padding: 0;
+  }
+  .header {
+    height: fit-content;
+  }
+  .header .nav .nav-items {
+    width: fit-content;
+    padding: 0;
+    left: 3%;
+  }
+
+  .section-1 {
+    height: 800px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+  .section-1 .main-bar {
+    width: 61.1%;
+    height: fit-content;
+
+    top: 0;
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+  }
+  .section-1 .main-bar .title {
+    position: relative;
+    top: 0;
+  }
+  .section-1 .main-bar .content {
+    position: relative;
+    width: 100%;
+    background-color: white;
+
+    top: 60px;
+    left: 0;
+    border-radius: 15px;
+  }
+  .section-1 .content .carousel {
+    width: 100%;
+  }
+  .section-1 .content .carousel .carousel-inner {
+    width: 100%;
+  }
+  .section-1 .content .carousel .carousel-item img {
+    width: 100%;
+  }
+  .section-1 .side-bar {
+    position: absolute;
+    width: 35%;
+    top: 190px;
+    height: fit-content;
+    padding: 0;
+  }
+  .section-1 .side-bar .content-box {
+    margin: 35.5px auto;
+    width: fit-content;
+  }
+  .carousel-control-next {
+    position: absolute;
+
+    right: 0;
+    padding: 0px;
+    width: 35px;
+    height: 70px;
+    top: 18px;
+    margin: auto;
+    background-position: center center;
+    margin-right: 0;
+  }
+  .section-2 {
+    position: relative;
+    height: fit-content;
+
+    height: 1400px;
+    margin-top: 0px;
+    top: 120px;
+    margin-bottom: 0;
+    bottom: 0;
+  }
+  .section-2 .articles {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+  }
+  .section-2 .articles .title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .section-2 .articles .header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 60;
+    bottom: 0;
+  }
+  .section-2 .articles .header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 60;
+    bottom: 0;
+  }
+  .section-2 .articles hr {
+    position: relative;
+    margin: auto auto;
+    padding: 0;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+  .section-2 .articles .article-content {
+    position: relative;
+    margin: auto auto;
+
+    padding: 0;
+    top: 70px;
+    left: 0;
+    right: 0;
+  }
+  .section-2 .articles .article-content .article-item {
+    position: relative;
+    padding: 0;
+  }
+  .section-2 .articles .article-content .content {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 40%;
+    bottom: 0;
+    margin: auto 0;
+    height: max-content;
+    width: 40%;
+
+    padding: 0;
+  }
+  .article-content .content .title h4 {
+    font-family: 14px;
+    font-weight: 400;
+  }
+  .article-content .content .title .read-more label {
+    font-weight: 300;
+  }
+  .section-2 .pagination {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 80px;
+    bottom: 0;
+  }
+  .section-3 {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: fit-content;
+    top: 100px;
+  }
+  .section-3 .popular-articles .slide-section {
+    top: 80px;
+  }
+
+  .section-3 .popular-articles #slide-bar {
+    width: 1960px;
+  }
+
+  .section-4 {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: 400px;
+    top: 250px;
+  }
+  .section-4 .title {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .section-4 .image-raw {
+    position: relative;
+    top: 80;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer {
+    position: relative;
+    top: 300px;
+  }
+
+  #footer .side-content .top-bar .fb-btn {
+    position: relative;
+    background-color: #e2edfe;
+  }
+  #footer .side-content .top-bar .learn-btn {
+    position: relative;
+    background-color: #e2edfe;
+  }
+}
+
+@media (min-device-width: 1400px) {
+  .section-2 .articles .article-content .content {
+    position: absolute;
+    top: 0;
+    left: 56%;
+
+    bottom: 0;
+    margin: auto 0;
+    height: max-content;
+    width: 40%;
+
+    padding: 0;
+  }
+  .article-content .content .title h4 {
+    font-family: 14px;
+    font-weight: 400;
+  }
+  .article-content .content .title .read-more label {
+    font-weight: 300;
   }
 }
