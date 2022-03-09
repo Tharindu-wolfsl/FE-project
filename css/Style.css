@@ -21,7 +21,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #f9f9f9;
-  background-color: rgba(255, 0, 0, 0.24);
 }
 
 .checkbox {
@@ -92,12 +91,7 @@ a {
   margin: 0px 10px;
   color: #373f66;
 }
-.header .nav .nav-items li a {
-  font-family: "Sora", sans-serif;
-  margin: auto;
-  font-size: 12px;
-  color: #373f66;
-}
+
 .header .nav .nav-items li img {
   margin-left: 3px;
 }
@@ -165,7 +159,7 @@ a {
 .section-1 .main-bar .content {
   position: absolute;
 
-  background-color: white;
+  background-color: #ffffff;
   width: 700px;
   height: 594px;
   top: 200px;
@@ -251,12 +245,13 @@ a {
   opacity: 0.6;
   margin: 0 0 10px 20px;
 }
-.section-1 .content .share img {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 20px;
-  top: 540px;
+.section-1 .main-bar .content .date {
+  margin-bottom: 10px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .section-1 .side-bar {
@@ -274,7 +269,7 @@ a {
   position: relative;
   display: flex;
 
-  margin: 30px 30px 40px 30px;
+  margin: 37.5px auto;
   width: 360px;
   height: 104px;
   /* border: 1px #38f9d7 solid; */
@@ -1505,7 +1500,7 @@ a {
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
-    width: 113%;
+    width: 105%;
     overflow-x: hidden;
     overflow-y: clip;
   }
@@ -1583,7 +1578,7 @@ a {
 
   .popular-articles .slide-section {
     width: 1360px;
-
+    top: 60px;
     overflow-x: hidden;
   }
   .popular-articles .slide-bar-mobile {
@@ -1680,6 +1675,23 @@ a {
     right: 0;
     top: 0;
     width: 100%;
+  }
+  #footer .footer-content .side-content .top-bar .logo .label-2 {
+    font-size: 11px;
+  }
+  #footer .side-content .top-bar .fb-btn {
+    left: 70%;
+  }
+  #footer .side-content .top-bar .learn-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    left: 70%;
+    top: 15%;
   }
 
   .col-1,
@@ -1790,10 +1802,10 @@ a {
     margin: auto 0;
   }
   .header .nav .nav-items li {
-    margin: 0px 8px;
+    margin: 0px 10px;
   }
   .header .nav .nav-items li a {
-    font-size: 13px;
+    font-size: 10px;
   }
   .header .login #login-drop {
     position: relative;
@@ -1830,7 +1842,8 @@ a {
   }
   .section-1 .main-bar .content {
     width: 60%;
-    height: 100%;
+    height: 510px;
+    background-color: #ffffff;
   }
   .section-1 .content .carousel {
     width: 100%;
@@ -1843,7 +1856,7 @@ a {
   .section-1 .content .carousel .carousel-item img {
     width: fit-content;
     height: fit-content;
-    top: 3px;
+    top: 4px;
   }
 
   .carousel-control-prev {
@@ -1871,7 +1884,7 @@ a {
   }
   .section-1 .side-bar {
     width: 37%;
-    height: fit-content;
+    height: 510px;
   }
   .side-bar .content-box {
     width: 88%;
@@ -2028,13 +2041,19 @@ a {
     letter-spacing: 0.001px;
   }
   /* .section-3 */
+  .popular-articles .slide-section {
+    position: relative;
 
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+  }
   .popular-articles #slide-bar {
     justify-content: start;
   }
   .popular-articles .slide-hide-sec {
     position: relative;
-    width: 110%;
+    width: 105%;
     height: fit-content;
 
     padding: 0;
@@ -2104,6 +2123,7 @@ a {
   /* footer */
   #footer {
     height: 940px;
+    width: 100%;
   }
   #footer .main-content-1 {
     display: block;
@@ -2153,7 +2173,69 @@ a {
     height: 589px;
   }
 }
-@media (min-device-width: 1360px) {
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1359px) {
+  .container {
+    width: 100%;
+  }
+
+  .header .nav .nav-items li a {
+    font-size: 12px;
+  }
+
+  .section-1 .main-bar .content {
+    height: 580px;
+  }
+  .section-1 .side-bar {
+    height: 580px;
+  }
+  .section-1 .side-bar .content-box {
+    margin: 30px auto;
+  }
+  .article-content .article-item .pic img {
+    position: absolute;
+    width: 100%;
+  }
+  .section-2 .articles .article-content .content {
+    position: absolute;
+    top: 83%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: fit-content;
+    width: 90%;
+
+    padding: 0;
+  }
+  .articles .article-content .content .title h4 {
+    font-size: 14px;
+  }
+  #footer .side-content .top-bar {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  #footer .side-content .top-bar .fb-btn {
+    position: absolute;
+    background-color: #e2edfe;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    top: 5%;
+    left: 75%;
+  }
+  #footer .side-content .top-bar .learn-btn {
+    position: absolute;
+    background-color: #e2edfe;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    top: 65%;
+    left: 75%;
+  }
+}
+@media (min-device-width: 1359px) {
   body {
     width: 100%;
     overflow-x: clip;
@@ -2173,6 +2255,9 @@ a {
     width: fit-content;
     padding: 0;
     left: 3%;
+  }
+  .header .nav .nav-items li a {
+    font-size: 12px;
   }
 
   .section-1 {
@@ -2197,29 +2282,44 @@ a {
     position: relative;
     width: 100%;
     background-color: white;
+    height: fit-content;
+    padding-bottom: 10px;
 
-    top: 60px;
+    top: 20px;
     left: 0;
     border-radius: 15px;
   }
+  .section-1 .main-bar .content .date {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .section-1 .content .carousel {
     width: 100%;
+    height: fit-content;
   }
   .section-1 .content .carousel .carousel-inner {
     width: 100%;
+    height: fit-content;
   }
   .section-1 .content .carousel .carousel-item img {
     width: 100%;
+    top: 4px;
+    height: fit-content;
   }
   .section-1 .side-bar {
     position: absolute;
     width: 35%;
-    top: 190px;
+    top: 150px;
     height: fit-content;
     padding: 0;
   }
   .section-1 .side-bar .content-box {
-    margin: 35.5px auto;
+    margin: 37.5px auto;
     width: fit-content;
   }
   .carousel-control-next {
@@ -2362,15 +2462,37 @@ a {
   #footer {
     position: relative;
     top: 300px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0;
   }
-
-  #footer .side-content .top-bar .fb-btn {
+  #footer .side-content .top-bar {
     position: relative;
+    margin-bottom: 50px;
+  }
+  #footer .side-content .top-bar .fb-btn {
+    position: absolute;
     background-color: #e2edfe;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    top: 5%;
+    left: 70%;
   }
   #footer .side-content .top-bar .learn-btn {
-    position: relative;
+    position: absolute;
     background-color: #e2edfe;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    top: 65%;
+    left: 70%;
+  }
+  #footer .side-content .top-bar .logo .label-2 {
+    font-size: 11px;
+    width: 58%;
   }
 }
 
@@ -2393,5 +2515,10 @@ a {
   }
   .article-content .content .title .read-more label {
     font-weight: 300;
+  }
+  .section-1 .side-bar .content-box {
+    margin: 50px auto;
+
+    width: fit-content;
   }
 }
