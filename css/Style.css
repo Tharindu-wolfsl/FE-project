@@ -2627,6 +2627,33 @@ a {
 }
 
 @media (min-device-width: 1400px) {
+  .section-1 .carousel-control-prev {
+    position: absolute;
+
+    background-position: center left;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 34px;
+    height: 58px;
+    top: 42%;
+    bottom: 0;
+  }
+  .section-1 .carousel-control-next {
+    position: absolute;
+
+    background-position: center right;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 95.5%;
+    top: 42%;
+  }
+
   .section-2 .articles .article-content .content {
     position: absolute;
     top: 0;
