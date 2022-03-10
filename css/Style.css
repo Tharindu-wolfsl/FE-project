@@ -1089,7 +1089,7 @@ a {
 /* Portrait and Landscape */
 /* Portrait */
 
-@media (max-device-width: 852px) {
+@media (max-device-width: 1023px) {
   body {
     margin: 0;
     padding: 0;
@@ -1736,7 +1736,137 @@ a {
     transition: ease-in 0.5s;
   }
 }
-@media only screen and (min-width: 852px) and (max-width: 1359px) {
+
+@media only screen and (min-width: 540px) and (max-width: 1023px) {
+  .container {
+    width: 80%;
+  }
+  .section-1 .main-bar .slide-item {
+    width: fit-content;
+    height: fit-content;
+  }
+  .section-1 .main-bar .slide-section #slide-bar1 {
+    width: 1080px;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.5s;
+  }
+
+  .section-2 .header .nav-items {
+    position: relative;
+    bottom: 0;
+    top: 12px;
+    margin: auto auto;
+    height: fit-content;
+    width: fit-content;
+  }
+  .section-2 hr {
+    position: absolute;
+    bottom: 55;
+    margin: auto auto;
+    color: rgb(0, 0, 0.1);
+    width: 97%;
+  }
+  .article-content .article-item {
+    position: relative;
+    width: 80%;
+    margin: 25px auto;
+    height: max-content;
+    padding-bottom: 20px;
+  }
+  .article-content .content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+
+    height: fit-content;
+    top: 10px;
+
+    margin: auto auto;
+  }
+  .article-content .content .title {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .section-2 .article-content {
+    position: relative;
+    margin: 0;
+    top: 0;
+  }
+  .section-2 .article-content .col-1 {
+    position: relative;
+    top: 0;
+  }
+  .article-content .article-item .pic img {
+    position: relative;
+  }
+  .article-content .content .title h4 {
+    position: relative;
+  }
+  .section-2 .title {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    margin: 0;
+  }
+  .section-2 .header {
+    position: relative;
+    top: 100px;
+    margin: 0;
+  }
+  .section-2 .pagination-mobile {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    margin-top: 120px;
+  }
+  .section-2 .pagination-desk {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .section-3 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    margin: 200px auto;
+  }
+  .section-4 .image-raw {
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    height: fit-content;
+  }
+  .section-4 .image-raw .pic img {
+    margin: 20px auto;
+  }
+
+  #footer .footer-content .side-content {
+    position: relative;
+    width: 350px;
+    margin: auto;
+  }
+  #footer .footer-content .side-content .bottom-bar .top-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1359px) {
   body {
     margin: 0;
     padding: 0;
