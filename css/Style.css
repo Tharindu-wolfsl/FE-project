@@ -1183,7 +1183,7 @@ a {
     position: absolute;
     top: 180px;
     height: 290px;
-    width: 115%;
+    width: 110%;
     overflow-y: clip;
     overflow-x: hidden;
   }
@@ -1500,7 +1500,7 @@ a {
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
-    width: 105%;
+    width: 110%;
     overflow-x: hidden;
     overflow-y: clip;
   }
