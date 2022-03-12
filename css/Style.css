@@ -1993,17 +1993,29 @@ a {
   } */
 
   .section-1 {
+    margin: 0;
+    top: 0;
+    bottom: 0;
   }
   .section-1 .main-bar {
     position: relative;
 
     width: 100%;
+    height: fit-content;
   }
   .section-1 .main-bar .title {
     position: relative;
     top: 0;
     margin: 0;
     top: 63;
+  }
+  .section-1 .main-bar .title img {
+    position: relative;
+    width: 122px;
+    height: 68px;
+    left: 0;
+    margin-left: 0;
+    left: 153px;
   }
   .section-1 .main-bar .title label {
     font-weight: 700;
@@ -2161,34 +2173,112 @@ a {
   }
 
   /* .section2 */
+  .section-2 {
+    position: relative;
+    margin: 0;
+    top: 0;
+    top: 122px;
+    bottom: 0;
+  }
+  .section-2 .head-title {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-2 .head-title .icon {
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+
+    background-position: center left;
+  }
+  .section-2 .head-title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 20px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
 
   .section-2 .header {
+    margin-top: 0;
+    top: 40px;
     padding: 0;
     height: 60px;
+    text-align: center;
+    z-index: 1;
   }
-  .section-2 .header .nav-items {
-    margin: auto 0 10px 0;
-  }
+
   .section-2 .header .nav-items li a {
-    font-size: 12px;
-    padding-bottom: 16px;
-    padding-right: 4px;
-    padding-left: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0;
+    padding: 21px 8px;
+
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.08em;
 
     /* identical to box height, or 24px */
 
     /* Green */
   }
+
+  .section-2 .header .nav-items {
+    position: relative;
+    left: 0;
+    margin: 0;
+    top: 0;
+
+    width: 745px;
+    height: fit-content;
+    margin: auto auto;
+  }
   .section-2 hr {
     position: relative;
-    top: 60;
+    top: 42;
     margin: auto 0;
     color: rgb(0, 0, 0.1);
     width: 97.5%;
+    opacity: 0.4;
+  }
+  .section-2 .article-content {
+    position: relative;
+    margin: 0;
+    top: 0;
+    top: 80px;
+
+    padding: 0;
+    height: fit-content;
+    background-color: #f9f9f9;
   }
 
   .section-2 .article-content .article-item {
-    display: flex;
+    margin: 0;
+    height: 332px;
+    margin-bottom: 20px;
   }
   .article-content .article-item {
     position: relative;
@@ -2203,45 +2293,95 @@ a {
   .article-content .content {
     position: absolute;
     left: 20px;
-    width: 90%;
+    width: 248px;
+    margin: auto;
     bottom: 20px;
+
+    height: fit-content;
+  }
+  .article-content .content .article-item {
+    position: relative;
+    height: 332px;
+    margin: 0;
   }
   .article-content .article-item .pic img {
     width: 100%;
+    margin: 0;
   }
   .article-content .content .title h4 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
-    top: 10px;
-    margin: 10px 5px;
+    line-height: 150%;
+
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    width: 248px;
+
+    /* Kon */
+
+    color: #373f66;
+    margin: px auto;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    right: 0;
   }
   .article-content .content .read-more {
+    position: relative;
     border-bottom: 1px #373f66 solid;
-    width: 90px;
+    width: 92px;
     padding: 0;
+    margin-bottom: 12px;
+
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-content .content .read-more label {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    margin: auto 0;
+  }
+  .article-content .content .read-more img {
+    right: 0;
+    margin-left: 74px;
   }
 
   .article-content .content .date label {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 400;
   }
   .article-content .content .share {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .section-2 .article-content .col-1 {
-    width: 30%;
+    width: 288px;
   }
   .section-2 .article-content .col-2 {
-    width: 30%;
+    width: 288px;
   }
   .section-2 .article-content .col-3 {
     display: block;
-    width: 30%;
+    width: 288px;
+  }
+  .pagination {
+    top: 40;
+    margin: 0;
   }
   .pagination .page-list {
-    width: 75%;
+    width: 600px;
     margin: auto;
 
     text-align: center;
@@ -2252,16 +2392,89 @@ a {
   .pagination .page-list li a {
     letter-spacing: 0.001px;
   }
+
   /* .section-3 */
+
+  .section-3 .title {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-3 .title .icon {
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+
+    height: fit-content;
+    background-position: center left;
+  }
+  .section-3 .title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 10px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-3 {
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 0;
+    top: 350px;
+    margin-bottom: 520px;
+  }
+  .section-3 .nav-btns {
+    margin: 0;
+    top: 0%;
+    top: 25px;
+
+    width: fit-content;
+  }
+  .section-3 .nav-btns #prev {
+    height: 30px;
+    width: 30px;
+    margin: 0 8px;
+    background-size: cover;
+  }
+  .section-3 .nav-btns #next {
+    height: 30px;
+    width: 30px;
+    margin: 0 8px;
+    background-size: cover;
+  }
+
   .popular-articles .slide-section {
     position: relative;
 
     margin: 0;
     padding: 0;
+
+    top: 0;
     width: 2000px;
   }
   .popular-articles #slide-bar {
     justify-content: start;
+    margin: 0;
+    top: 0;
   }
   .popular-articles .slide-hide-sec {
     position: relative;
@@ -2279,7 +2492,7 @@ a {
   .popular-articles .slide-item {
     position: relative;
 
-    width: 15%;
+    width: 315px;
     height: 346px;
     margin: auto 10px;
 
@@ -2289,15 +2502,13 @@ a {
     border-radius: 15px;
   }
   .popular-articles .slide-item .content .desc p {
-    width: 90%;
-    height: fit-content;
-    margin: 20px 20px 72px 20px;
-    font-family: "Noto Sans JP", sans-serif;
+    width: 267px;
+    height: 84px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: 700;
+    font-size: 14px;
     line-height: 150%;
-    /* or 24px */
+    /* or 21px */
 
     letter-spacing: 0.08em;
 
@@ -2314,11 +2525,68 @@ a {
   }
 
   /* section4 */
+  .section-4 {
+    position: relative;
 
+    margin: 0;
+    top: 0;
+    margin-bottom: 300px;
+  }
+  .section-4 .title {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-4 .title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 10px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-4 .title .icon {
+    position: absolute;
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin: auto;
+    font-size: 32px;
+    line-height: 150%;
+    left: 10px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
   .section-4 #image-raw-1 {
+    position: absolute;
     display: block;
     width: 100%;
 
+    margin: 0;
+    top: 80px;
     display: flex;
     flex-direction: raw;
     overflow: hidden;
@@ -2336,6 +2604,7 @@ a {
   #footer {
     height: 940px;
     width: 100%;
+    margin-bottom: 0;
   }
   #footer .main-content-1 {
     display: block;
@@ -2344,11 +2613,22 @@ a {
   .footer-content .main-content-1 {
     width: 65%;
   }
+  .footer-content .main-content-1 label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.08em;
+
+    color: #ffffff;
+  }
   .row-1,
   .row-2,
   .row-3 {
     width: 100%;
-    margin: 15px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2366,13 +2646,40 @@ a {
     width: 50%;
   }
   #footer .footer-content ul {
-    margin-top: 0;
+    margin-top: 20px;
     top: 0;
+  }
+  #footer .footer-content ul li {
+    margin-top: 0;
+    margin-bottom: 10px;
+    top: 0;
+  }
+  #footer .footer-content ul li a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    letter-spacing: 0.08em;
   }
 
   #footer .bottom-footer {
     position: static;
     margin-top: 110px;
+  }
+  #footer .bottom-footer .social {
+    width: 130px;
+
+    margin-right: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer .bottom-footer .social img {
+    margin: 0;
   }
   #footer .footer-content .side-content {
     position: absolute;
