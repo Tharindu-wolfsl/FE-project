@@ -1102,22 +1102,23 @@ a {
     margin: 0;
     padding: 0;
     border: none;
-    overflow-x: hidden;
+
+    overflow-x: clip;
 
     /* background-color: #f9f9f9; */
   }
 
   .container {
-    width: 80%;
+    width: 288px;
     left: 0;
-
-    margin: 16px auto;
+    margin-left: 16px;
+    margin: 0 auto;
     padding: 0;
   }
   header {
     padding: 0;
     margin: 0;
-    top: 16px;
+    margin-top: 16px;
   }
   .header .logo {
     position: absolute;
@@ -1182,18 +1183,46 @@ a {
   /* Section1 */
 
   .section-1 {
-    top: 0;
-    margin-bottom: 500px;
+    margin-top: 0;
+
+    padding: 0;
+
+    margin: 0;
+  }
+  .section-1 .main-bar {
+    position: relative;
+
+    height: fit-content;
+    width: 288px;
+  }
+  .section-1 .main-bar .title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+
+    top: 31.6px;
+  }
+  .section-1 .main-bar .title .title_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    /* or 42px */
+
+    /* Kon */
+
+    color: #373f66;
   }
 
   .section-1 .main-bar .slide-section {
     display: block;
     position: absolute;
-    top: 180px;
+    top: 140px;
     height: 290px;
-    width: 110%;
+    width: 115%;
     overflow-y: clip;
     overflow-x: hidden;
+    margin-bottom: 0;
   }
   .section-1 .main-bar .slide-section #slide-bar1 {
     position: relative;
@@ -1201,6 +1230,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     transition: 0.5s;
+    margin-bottom: 0;
 
     width: 1060px;
     height: 290px;
@@ -1238,6 +1268,7 @@ a {
   .section-1 .mobile-content .carousel .carousel-item img {
     position: relative;
     background-size: cover;
+    top: 4px;
     height: 150px;
     width: 255px;
   }
@@ -1297,7 +1328,7 @@ a {
     display: block;
     position: absolute;
     right: 0;
-    top: 116px;
+    top: 90px;
   }
 
   .main-bar .nav-btns #prev1 {
@@ -1341,37 +1372,63 @@ a {
   /* //section2 */
 
   .section-2 {
-    top: 100px;
+    position: relative;
+    margin: 0;
+    top: 340px;
   }
 
-  .section-2 .title {
-    bottom: 32;
-  }
+  .section-2 .head-title {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
 
-  .section-2 .articles .title h3 {
-    font-size: 20px;
-    left: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .section-2 .articles .title .icon {
-    position: absolute;
-    left: 0;
-    top: 5px;
-    background-size: cover;
+  .section-2 .head-title .icon {
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
     width: 8px;
     height: 20px;
-    background-position: center center;
+    margin: auto;
+    margin-left: 0;
+    background-size: cover;
+
+    background-position: center left;
   }
+  .section-2 .head-title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    left: 12px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+
   .section-2 .header {
-    top: 10px;
+    top: 0px;
     height: 50px;
     overflow-x: scroll;
     overflow-y: clip;
   }
   .section-2 hr {
-    bottom: 55;
+    bottom: 80;
     margin: auto 0;
     color: rgb(0, 0, 0.1);
     width: 93%;
+    opacity: 0.4;
   }
   .section-2 .header::-webkit-scrollbar {
     display: none;
@@ -1381,7 +1438,7 @@ a {
     height: fit-content;
     width: fit-content;
 
-    left: 0;
+    left: 10;
   }
   .section-2 .header .nav-items li {
     /* identical to box height, or 24px */
@@ -1395,8 +1452,8 @@ a {
   .section-2 .header .nav-items li a {
     font-size: 12px;
     padding-bottom: 13px;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
 
     /* identical to box height, or 24px */
 
@@ -1440,18 +1497,36 @@ a {
     color: #373f66;
   }
 
-  .section-2 .pagination-mobile {
+  .section-2 .pagination {
+    position: relative;
+  }
+  .section-2 .pagination .page-list {
+    margin: 0 auto;
+  }
+  .section-2 .pagination li img {
     position: absolute;
 
-    top: 80px;
+    bottom: 3;
+  }
+  .section-2 .pagination li #prev img {
+    left: 5;
+  }
+  .section-2 .pagination li #right img {
+    right: 0;
   }
   .section-2 .pagination-desk {
     position: absolute;
-    margin-top: 1840px;
+    margin-top: 1810px;
   }
   .section-2 .article-content {
-    top: 120px;
+    top: 160px;
     margin-bottom: 100px;
+  }
+  .section-2 .pagination-mobile {
+    position: static;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   .section-2 .article-content .col-2 {
     display: none;
@@ -1462,7 +1537,7 @@ a {
   .article-content .article-item {
     position: relative;
     width: 100%;
-    height: 325px;
+    height: 306px;
     margin-top: 15px;
     margin-bottom: 15px;
     background: #ffffff;
@@ -1471,8 +1546,9 @@ a {
   }
   .article-content .content {
     position: absolute;
-    left: 25px;
-    width: 90%;
+    left: 12px;
+    width: 264px;
+
     bottom: 15px;
   }
   .article-content .article-item .pic img {
@@ -1482,11 +1558,18 @@ a {
     font-size: 14px;
   }
   .article-content .content .read-more {
+    position: absolute;
     border-bottom: 1px #373f66 solid;
-    width: 90px;
-    padding: 0;
-  }
 
+    width: 92px;
+    padding: 0;
+    bottom: 38px;
+  }
+  .article-content .content .read-more img {
+    position: absolute;
+
+    right: 0;
+  }
   .article-content .content .date label {
     font-size: 12px;
   }
@@ -1498,7 +1581,7 @@ a {
     background-repeat: no-repeat;
   }
   .section-3 {
-    margin-top: 2100px;
+    margin-top: 2120px;
     margin-bottom: 190px;
   }
   .section-3 .popular-articles .title {
@@ -1595,6 +1678,7 @@ a {
 
   .section-4 {
     top: 0;
+    margin-bottom: 0;
   }
 
   .section-4 .title {
@@ -1620,17 +1704,19 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 700px;
+    height: fit-content;
   }
   .section-4 .image-raw .pic img {
     width: 100%;
+    height: 165px;
+    margin-bottom: 30px;
   }
 
   /* footer */
   #footer {
     width: 100%;
     height: fit-content;
-    top: 0;
+    top: 80;
     background-size: cover;
     border-radius: 15px;
     background-image: url("/assets/Footer/Mask\ group1.png");
