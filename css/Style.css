@@ -358,7 +358,7 @@ a {
   position: absolute;
   left: 0;
   bottom: 60px;
-  padding: 4px 0;
+  padding: 0;
 }
 .section-2 .articles .title .icon {
   position: absolute;
@@ -2049,22 +2049,24 @@ a {
   }
 
   .carousel-control-prev {
-    background-image: url("/assets/Group\ 125921.png");
     height: 60px;
     width: 30px;
     border: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-shadow: none;
+    background: #f9f9f9;
+    mix-blend-mode: normal;
+    border-radius: 0 5px 5px 0;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
   .carousel-control-next {
-    background-image: url("/assets/Group\ 125920.png");
-
+    height: 60px;
     width: 30px;
     border: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-shadow: none;
+    background: #f9f9f9;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
   .prev-next {
     position: absolute;
@@ -2893,22 +2895,24 @@ a {
     height: 400px;
   }
   .carousel-control-prev {
-    background-image: url("/assets/Group\ 125921.png");
     height: 60px;
     width: 30px;
     border: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-shadow: none;
+    background: #f9f9f9;
+    mix-blend-mode: normal;
+    border-radius: 0 5px 5px 0;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
   .carousel-control-next {
-    background-image: url("/assets/Group\ 125920.png");
-
+    height: 60px;
     width: 30px;
     border: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-shadow: none;
+    background: #f9f9f9;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
   .prev-next {
     position: absolute;
@@ -2951,82 +2955,190 @@ a {
     box-sizing: border-box;
   }
 
+  /* .section-2 */
   .section-2 {
     position: relative;
-    height: fit-content;
-
-    height: 1400px;
-    margin-top: 0px;
-    top: 120px;
-    margin-bottom: 0;
+    margin: 0;
+    top: 0;
+    top: 122px;
     bottom: 0;
+    margin-bottom: 75px;
+    height: fit-content;
   }
   .section-2 .articles {
     position: relative;
 
     width: 100%;
-    height: 100%;
+    height: fit-content;
+  }
+  .section-2 .head-title {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-2 .head-title .icon {
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+
+    background-position: center left;
+  }
+  .section-2 .head-title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 20px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+
+  .section-2 .header {
+    margin-top: 0;
+    top: 40px;
+    padding: 0;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .section-2 .header .nav-items li a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0;
+    padding: 28px 12px;
+
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.08em;
+
+    /* identical to box height, or 24px */
+
+    /* Green */
+  }
+
+  .section-2 .header .nav-items {
+    position: relative;
+    left: 0;
+    margin: 0;
+    top: 0;
+
+    width: 994px;
+    height: fit-content;
+    margin: auto;
+    top: 28px;
+  }
+  .section-2 hr {
+    position: relative;
+    top: 42;
+    margin: auto 0;
+    color: rgb(0, 0, 0.1);
+    width: 97.5%;
+    opacity: 0.4;
+  }
+  .section-2 .article-content {
+    position: relative;
+    margin: 0;
+    top: 0;
+    top: 100px;
+
+    padding: 0;
+    height: fit-content;
+    background-color: #f9f9f9;
+  }
+  .section-2 .article-content .col-1 {
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section-2 .article-content .col-2 {
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .article-content .article-item {
+    position: relative;
+    width: 575px;
+    height: 180px;
+    margin: 0;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-bottom: 30px;
   }
   .section-2 .articles .title {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .section-2 .articles .header {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 60;
-    bottom: 0;
-  }
-  .section-2 .articles .header {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 60;
-    bottom: 0;
-  }
-  .section-2 .articles hr {
-    position: relative;
-    margin: auto auto;
-    padding: 0;
-    top: 60px;
-    left: 0;
-    right: 0;
-  }
-  .section-2 .articles .article-content {
-    position: relative;
-    margin: auto auto;
-
-    padding: 0;
-    top: 70px;
-    left: 0;
-    right: 0;
-  }
-  .section-2 .articles .article-content .article-item {
-    position: relative;
-    padding: 0;
-  }
-  .section-2 .articles .article-content .content {
     position: absolute;
-    top: 0;
-    left: 60%;
-    right: 40%;
-    bottom: 0;
-    margin: auto 0;
-    height: max-content;
-    width: 40%;
-
+    left: 0;
+    bottom: 75px;
     padding: 0;
+    margin: 0;
+    right: 0;
   }
   .article-content .content .title h4 {
-    font-family: 14px;
-    font-weight: 400;
+    position: relative;
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 16px;
+
+    line-height: 150%;
+
+    /* or 24px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
-  .article-content .content .title .read-more label {
-    font-weight: 300;
+
+  .article-content .content .read-more {
+    position: relative;
+    border-bottom: 1px #373f66 solid;
+    width: 92px;
+    padding: 0;
+    margin-bottom: 12px;
+
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-content .content .read-more label {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    margin: auto 0;
+  }
+  .article-content .content .read-more img {
+    right: 0;
+    margin-left: 74px;
   }
   .section-2 .pagination {
     position: relative;
@@ -3037,40 +3149,152 @@ a {
   }
   .section-3 {
     position: relative;
+    top: 300px;
 
     margin: 0;
-    padding: 0;
-    bottom: 0;
+  }
+  .section-3 .title {
+    width: fit-content;
     height: fit-content;
-    top: 100px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-3 .title .icon {
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+
+    height: fit-content;
+    background-position: center left;
+  }
+  .section-3 .title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 10px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-3 .nav-btns {
+    margin: 0;
+    top: 0%;
+    top: 25px;
+
+    width: fit-content;
+  }
+  .section-3 .nav-btns #prev {
+    height: 50px;
+    width: 50px;
+    margin: 0 13px;
+    background-size: cover;
+  }
+  .section-3 .nav-btns #next {
+    height: 50px;
+    width: 50px;
+    margin: 0 13px;
+    background-size: cover;
   }
   .section-3 .popular-articles .slide-section {
-    top: 80px;
+    top: 60px;
+    margin-top: 0;
   }
 
   .section-3 .popular-articles #slide-bar {
-    width: 1960px;
+    width: 1870px;
+    margin-top: 0;
+    top: 0;
+  }
+  .popular-articles .slide-item {
+    position: relative;
+
+    width: 350px;
+    height: 366px;
+    margin: 0 10px;
+
+    /* White */
+
+    background: #ffffff;
+    border-radius: 15px;
   }
 
   .section-4 {
     position: relative;
 
     margin: 0;
-    padding: 0;
-    bottom: 0;
-    height: 400px;
-    top: 250px;
+    top: 500px;
+    margin-bottom: 300px;
   }
   .section-4 .title {
-    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
     top: 0;
     bottom: 0;
-    margin: 0;
-    padding: 0;
+    left: 0;
+    width: 375px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-4 .title .title_name {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    left: 0px;
+    margin-bottom: 0;
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-4 .title .icon {
+    position: relative;
+    background-image: url("/assets/Articles/Rectangle\ 363.png");
+    width: 10px;
+    height: 30px;
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 150%;
+
+    left: 0;
+    margin-bottom: 0;
+
+    /* or 48px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
   .section-4 .image-raw {
     position: relative;
-    top: 80;
+    top: 0;
     bottom: 0;
     margin: 0;
     padding: 0;
@@ -3078,10 +3302,41 @@ a {
 
   #footer {
     position: relative;
-    top: 300px;
+    top: 360px;
+    height: 658px;
     background-size: cover;
     background-position: center center;
-    border-radius: 0;
+    border-radius: 15px;
+  }
+  .row-1,
+  .row-2 {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer .footer-content ul {
+    margin-top: 20px;
+    top: 0;
+  }
+  #footer .footer-content ul li {
+    margin-top: 0;
+    margin-bottom: 10px;
+    top: 0;
+  }
+  #footer .footer-content .main-content label {
+    font-size: 16px;
+  }
+  #footer .footer-content ul li a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    letter-spacing: 0.08em;
   }
   #footer .side-content .top-bar {
     position: relative;
@@ -3110,6 +3365,22 @@ a {
   #footer .side-content .top-bar .logo .label-2 {
     font-size: 11px;
     width: 58%;
+  }
+  #footer .bottom-footer {
+    position: relative;
+    top: 35px;
+  }
+  #footer .bottom-footer .social {
+    width: 130px;
+
+    margin-right: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer .bottom-footer .social img {
+    margin: 0;
   }
 }
 
