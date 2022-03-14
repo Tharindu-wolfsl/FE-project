@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Sora:wght@100;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sora:wght@600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
 :root {
   --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   --border: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
@@ -3009,7 +3011,7 @@ a {
   }
 
   .section-1 {
-    height: 800px;
+    height: 744px;
     margin-top: 60px;
     margin-bottom: 0px;
   }
@@ -3180,7 +3182,7 @@ a {
     position: relative;
     margin: 0;
     top: 0;
-    top: 122px;
+    top: 160px;
     bottom: 0;
     margin-bottom: 75px;
     height: fit-content;
