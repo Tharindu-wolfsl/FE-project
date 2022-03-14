@@ -15,7 +15,7 @@
        pos-=275;
          if(pos==-1100){
    
-           document.getElementById("next").disabled = true;
+          document.querySelector(".popular-articles .nav-btns #next").disabled = true;
            
          }
     
@@ -71,18 +71,20 @@
      //  console.log("left: "+style.marginLeft);
      //  console.log("right: "+style.marginRight);
       let pos=0;
- 
+     
      next.addEventListener("click",()=>{
  
      pos-=400;
        if(pos==-800){
  
-         document.getElementById("next").disabled = true;
+        document.querySelector(".popular-articles .nav-btns #next").disabled = true;
+ 
          
        }
   
  
      slider.style.transform=`translateX(${pos}px)`;
+     console.log(pos);
      document.querySelector(".popular-articles .nav-btns #prev").disabled = false;
  
  
