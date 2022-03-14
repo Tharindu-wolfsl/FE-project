@@ -606,8 +606,6 @@ a {
   color: #373f66;
 }
 .pagination .page-list .active-1 {
-  background-color: #4ac0b1;
-
   color: white;
 }
 .pagination .page-list a.active {
@@ -2217,9 +2215,18 @@ a {
 
   .section-1 .main-bar .content h3 {
     font-size: 18px;
+    margin-bottom: 20px;
   }
   .section-1 .content .read-more {
+    position: relative;
     margin: 0 0 20px 20px;
+    width: 110px;
+    top: 0;
+    bottom: 0;
+  }
+  .section-1 .content .read-more img {
+    margin: 0;
+    margin-left: 10px;
   }
   .section-1 .content .share {
     position: absolute;
@@ -2264,6 +2271,35 @@ a {
     top: 0;
 
     font-size: 12px;
+  }
+  .section-1 .content {
+    background-color: red;
+  }
+  .section-1 .main-bar .content .date {
+    position: relative;
+    font-size: 14px;
+    height: 20px;
+
+    bottom: 11px;
+  }
+  .section-1 .main-bar .content .date p {
+    font-size: 14px;
+  }
+  .section-1 .main-bar .content .read-more p {
+    position: relative;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
 
   /* .section2 */
@@ -2471,20 +2507,57 @@ a {
     width: 288px;
   }
   .pagination {
-    top: 40;
-    margin: 0;
+    top: 50;
+    margin-top: 20px;
+    width: 469px;
   }
   .pagination .page-list {
-    width: 600px;
+    width: 469px;
     margin: auto;
+    height: 30px;
 
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .pagination .page-list li {
-    margin: auto 3px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
   }
   .pagination .page-list li a {
-    letter-spacing: 0.001px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    top: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-2 .page-list #middle {
+    position: relative;
+    top: 0;
+    margin: 0;
+    bottom: 50px;
+  }
+  .section-2 .page-list #middle-list {
+    position: relative;
+    top: 0;
+    margin: 0;
+    top: 0px;
+  }
+  .section-2 .page-list .active-1 {
+    background-color: #4ac0b1;
   }
 
   /* .section-3 */
@@ -2954,6 +3027,11 @@ a {
 
     top: 0;
   }
+  .section-1 .main-bar .title img {
+    position: relative;
+
+    top: 0;
+  }
   .section-1 .main-bar .content {
     position: relative;
     width: 700px;
@@ -2978,6 +3056,7 @@ a {
   }
   .section-1 .main-bar .content .read-more {
     position: relative;
+    bottom: 6px;
   }
 
   .section-1 .content .carousel {
@@ -3051,6 +3130,9 @@ a {
     height: fit-content;
     margin: auto 0;
     right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
   }
   .section-1 .date img {
     margin: 0;
@@ -3073,7 +3155,7 @@ a {
   .section-1 .side-bar .content-box {
     width: 360px;
     height: 104px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   .section-1 .side-bar .inner-side {
@@ -3236,6 +3318,19 @@ a {
     margin: 0;
     right: 0;
   }
+
+  .section-2 .article-content .content {
+    position: relative;
+
+    height: 140px;
+    bottom: 160px;
+    left: 0px;
+    left: 335px;
+  }
+  .section-2 .content .date {
+    position: relative;
+    top: 80px;
+  }
   .article-content .content .title h4 {
     position: relative;
     font-family: "Noto Sans JP", sans-serif;
@@ -3261,7 +3356,7 @@ a {
     width: 92px;
     padding: 0;
     margin-bottom: 12px;
-
+    top: 81px;
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -3280,10 +3375,72 @@ a {
   }
   .section-2 .pagination {
     position: relative;
+    left: 358px;
+    width: 460px;
+    height: 30px;
+
     margin: 0;
     padding: 0;
-    top: 80px;
+    top: 90px;
     bottom: 0;
+  }
+  .section-2 .pagination .page-list {
+    width: 460px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-2 .pagination .page-list img {
+    position: relative;
+    top: 5px;
+  }
+  .section-2 .pagination .page-list li {
+    position: relative;
+    top: 5px;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    border: none;
+  }
+
+  .section-2 .pagination .page-list li a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    top: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .section-2 .page-list #middle {
+    position: relative;
+    top: 0;
+    margin: 0;
+    bottom: 40px;
+  }
+  .section-2 .page-list #middle-list {
+    position: relative;
+    top: 0;
+    margin: 0;
+    top: 5px;
+  }
+  .section-2 .page-list .active-1 {
+    background-color: #4ac0b1;
+  }
+  .pagination .page-list a.active {
+    color: white;
   }
   .section-3 {
     position: relative;
@@ -3478,7 +3635,10 @@ a {
   }
   #footer .side-content .top-bar {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+  }
+  #footer .side-content .top-bar {
+    position: relative;
   }
   #footer .side-content .top-bar .fb-btn {
     position: absolute;
