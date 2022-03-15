@@ -112,6 +112,7 @@ a {
   font-size: 12px;
   margin-right: 20px;
   border: none;
+  letter-spacing: 0.08em;
 }
 
 .header .nav-btn2 {
@@ -122,6 +123,7 @@ a {
   border-radius: 5px;
   font-size: 12px;
   border: none;
+  letter-spacing: 0.08em;
 }
 
 /* section-1 */
@@ -433,8 +435,7 @@ a {
 }
 .section-2 hr {
   position: absolute;
-
-  height: 1px;
+  height: 2px;
   width: 98%;
   color: rgb(0, 0, 0.2);
   top: 124px;
@@ -588,17 +589,15 @@ a {
 
 .section-2 .pagination {
   width: 100%;
-  margin-bottom: 200px;
 }
 .pagination .page-list {
-  width: 60%;
   margin: auto;
 
   text-align: center;
 }
 .pagination .page-list li {
   display: inline-block;
-  padding: 13px 20px;
+
   margin: 5px;
   border-radius: 50%;
 }
@@ -617,7 +616,7 @@ a {
   color: #373f66;
 }
 .pagination .page-list .active-1 {
-  color: white;
+  color: #4ac0b0;
 }
 .pagination .page-list a.active {
   color: white;
@@ -1204,21 +1203,23 @@ a {
 
   .section-1 {
     margin-top: 0;
-
+    margin-bottom: 82px;
     padding: 0;
 
     margin: 0;
+    height: fit-content;
   }
   .section-1 .main-bar {
     position: relative;
 
-    height: fit-content;
-    width: 288px;
+    height: 63.5vh;
+    width: 100%;
   }
   .section-1 .main-bar .title {
     position: relative;
     width: 100%;
     margin-bottom: 0;
+    height: fit-content;
 
     top: 31.6px;
   }
@@ -1238,7 +1239,7 @@ a {
     display: block;
     position: absolute;
     top: 140px;
-    height: 290px;
+    height: 277px;
     width: 115%;
     overflow-y: clip;
     overflow-x: hidden;
@@ -1252,61 +1253,71 @@ a {
     transition: 0.5s;
     margin-bottom: 0;
 
-    width: 1060px;
-    height: 290px;
+    width: 972px;
+    height: 277px;
   }
 
   .section-1 .main-bar .slide-item {
-    width: 255px;
-    height: 290px;
+    width: 231px;
+    height: 277px;
+    margin: 0;
+    padding: 0;
   }
   .section-1 .main-bar .mobile-content {
     position: relative;
-
     background-color: white;
-    width: 255px;
-    height: 290px;
-
+    width: 231px;
+    height: 277px;
     border-radius: 15px;
   }
   .section-1 .mobile-content .carousel {
     position: relative;
-    width: 255px;
-    height: 140px;
-    border-radius: 15px;
+    width: 231px;
+    height: 132px;
+    border-radius: 10px;
     margin: 0;
     padding: 0;
   }
-  .section-1 .mobile-content .carousel .carousel-inner {
-    position: relative;
-    width: 255px;
-    height: 150px;
-    border-radius: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  .section-1 .mobile-content .carousel .carousel-item img {
+
+  .section-1 .mobile-content .carousel img {
     position: relative;
     background-size: cover;
-    top: 4px;
-    height: 150px;
-    width: 255px;
+
+    height: 132px;
+    width: 231px;
+
+    border-radius: 10px;
   }
   .section-1 .mobile-content h3 {
-    font-family: "Noto Sans JP", sans-serif;
+    position: relative;
+    font-family: "Noto Sans JP";
     font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: 700;
+    font-size: 14px;
     line-height: 150%;
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    width: 207px;
+    height: 57px;
+
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    margin-top: 12px;
+
+    /* Kon */
+
     color: #373f66;
-    margin: 6px 10px;
   }
   .section-1 .mobile-content .read-more {
-    margin: 10px 0 10px 10px;
     display: flex;
     flex-direction: row;
     color: #373f66;
-    width: 90px;
+    margin: 12px 12px 15px 12px;
+    width: 92px;
     height: 20px;
 
     padding: 0;
@@ -1315,34 +1326,62 @@ a {
   }
 
   .section-1 .mobile-content .read-more img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 
-    margin-left: 5px;
+    margin-left: 10px;
     padding: 0;
   }
   .section-1 .mobile-content .read-more p {
-    font-family: "Noto Sans JP", sans-serif;
-    color: #373f66;
-    font-size: 12px;
-    padding: 0;
-  }
-  .section-1 .mobile-content .date p {
-    font-family: Sora, sans-serif;
-    position: relative;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
     font-size: 12px;
     line-height: 150%;
-    color: #444444;
+    /* or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+
+  .section-1 .mobile-content .date {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 0;
+  }
+  .section-1 .mobile-content .date p {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+    width: fit-content;
+
+    color: #373f66;
+
     opacity: 0.6;
-    top: 5px;
-    left: 10px;
+    margin-left: 12px;
+    margin-top: 0px;
   }
   .section-1 .mobile-content .share img {
     position: relative;
-    width: 20px;
-    height: 20px;
-    left: 225px;
-    bottom: 30px;
+    margin: 0;
+    margin-left: 203px;
+    width: 16px;
+    height: 16px;
+    bottom: 16px;
   }
   .section-1 .main-bar .nav-btns {
     display: block;
@@ -1392,9 +1431,9 @@ a {
   /* //section2 */
 
   .section-2 {
-    position: relative;
-    margin: 0;
-    top: 340px;
+    margin-top: 82px;
+
+    top: 0px;
   }
 
   .section-2 .head-title {
@@ -1440,6 +1479,7 @@ a {
   .section-2 .header {
     top: 0px;
     height: 50px;
+    margin-top: 32px;
     overflow-x: scroll;
     overflow-y: clip;
   }
@@ -1486,7 +1526,7 @@ a {
   .section-2 .pagination {
     display: block;
     width: 100%;
-    top: 50px;
+    top: 30px;
   }
 
   .pagination .page-list {
@@ -1534,6 +1574,21 @@ a {
   .section-2 .pagination li #right img {
     right: 0;
   }
+  .section-2 .pagination li a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
   .section-2 .pagination-desk {
     position: absolute;
     margin-top: 1810px;
@@ -1546,8 +1601,9 @@ a {
     position: static;
 
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
+
   .section-2 .article-content .col-2 {
     display: none;
   }
@@ -2380,6 +2436,7 @@ a {
     margin: 0;
     top: 0;
     top: 120px;
+    height: fit-content;
     /* bottom: 0; */
   }
   .section-2 .head-title {
@@ -2422,12 +2479,14 @@ a {
   }
 
   .section-2 .header {
+    position: relative;
     margin-top: 0;
     top: 40px;
     padding: 0;
+    margin-bottom: 40px;
+
     height: 60px;
     text-align: center;
-    z-index: 1;
   }
 
   .section-2 .header .nav-items li a {
@@ -2460,7 +2519,7 @@ a {
   }
   .section-2 hr {
     position: relative;
-    top: 42;
+    top: 0;
     margin: auto 0;
     color: rgb(0, 0, 0.1);
     width: 97.5%;
@@ -2469,8 +2528,8 @@ a {
   .section-2 .article-content {
     position: relative;
     margin: 0;
-    top: 0;
-    top: 80px;
+    bottom: 0;
+    top: 40px;
 
     padding: 0;
     height: fit-content;
@@ -3373,7 +3432,7 @@ a {
     padding: 0;
     height: 80px;
     text-align: center;
-    z-index: 1;
+    margin-bottom: 40px;
   }
 
   .section-2 .header .nav-items li a {
@@ -3407,7 +3466,7 @@ a {
   }
   .section-2 hr {
     position: relative;
-    top: 42;
+    top: 0;
     margin: auto 0;
     color: rgb(0, 0, 0.1);
     width: 97.5%;
@@ -3416,8 +3475,7 @@ a {
   .section-2 .article-content {
     position: relative;
     margin: 0;
-    top: 0;
-    top: 100px;
+    top: 60px;
 
     padding: 0;
     height: fit-content;
@@ -3573,10 +3631,10 @@ a {
     margin: 0;
     top: 5px;
   }
-  .section-2 .page-list .active-1 {
-    background-color: #4ac0b1;
+  .pagination .page-list .active-1 {
+    background-color: #4ac0b0;
   }
-  .pagination .page-list a.active {
+  .pagination .page-list li a.active {
     color: white;
   }
   .section-3 {
@@ -3681,7 +3739,7 @@ a {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 375px;
+    width: 380px;
     margin-bottom: 50px;
 
     display: flex;
