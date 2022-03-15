@@ -331,7 +331,7 @@ a {
 
   /* Kon */
   color: #373f66;
-  line-height: 1;
+  line-height: 150%;
 }
 .side-bar .content-box .read-more {
   position: relative;
@@ -404,8 +404,8 @@ a {
   color: #373f66;
 }
 .section-2 .pagination-desk {
-  position: absolute;
-  margin-top: 1200px;
+  /* position: relative; */
+  /* margin-top: 0px; */
 }
 .section-2 .header {
   position: relative;
@@ -1432,8 +1432,13 @@ a {
 
   .section-2 {
     margin-top: 82px;
-
+    height: 277vh;
     top: 0px;
+  }
+  .section-2 .articles {
+    position: relative;
+    /* background-color: #000000; */
+    height: 277vh;
   }
 
   .section-2 .head-title {
@@ -1482,9 +1487,11 @@ a {
     margin-top: 32px;
     overflow-x: scroll;
     overflow-y: clip;
+    margin-bottom: 30px;
   }
   .section-2 hr {
-    bottom: 80;
+    top: 110;
+
     margin: auto 0;
     color: rgb(0, 0, 0.1);
     width: 93%;
@@ -1503,7 +1510,7 @@ a {
   .section-2 .header .nav-items li {
     /* identical to box height, or 24px */
 
-    margin: auto 10px;
+    margin: auto 5px;
     width: max-content;
     text-align: center;
 
@@ -1525,60 +1532,42 @@ a {
   }
   .section-2 .pagination {
     display: block;
-    width: 100%;
+    width: 288px;
     top: 30px;
+    height: 24px;
   }
 
   .pagination .page-list {
-    width: 100%;
-    margin: auto;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 288px;
+    height: 24px;
     padding: 0;
     text-align: center;
+    margin: 0;
+    top: 0;
   }
+
   .pagination .page-list li {
-    display: inline-block;
-    padding: 3px 9px;
-    margin: 0.5px;
+    height: 24px;
+    width: 24px;
+    border: none;
+
     border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    margin: auto;
   }
   .pagination .page-list a {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-
-    /* identical to box height, or 24px */
-
-    letter-spacing: 0.001em;
-
-    box-sizing: border-box;
-    /* Kon */
-
-    color: #373f66;
-  }
-
-  .section-2 .pagination {
-    position: relative;
-  }
-  .section-2 .pagination .page-list {
-    margin: 0 auto;
-  }
-  .section-2 .pagination li img {
-    position: absolute;
-
-    bottom: 3;
-  }
-  .section-2 .pagination li #prev img {
-    left: 5;
-  }
-  .section-2 .pagination li #right img {
-    right: 0;
-  }
-  .section-2 .pagination li a {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
+    border: none;
     /* or 21px */
 
     display: flex;
@@ -1589,64 +1578,114 @@ a {
 
     color: #373f66;
   }
-  .section-2 .pagination-desk {
+  #middle {
+    letter-spacing: 0.08em;
+  }
+  #middle-li {
+    position: relative;
+
+    background-color: transparent;
+
+    width: fit-content;
+    margin: 0;
+    bottom: 2px;
+  }
+  .pagination .page-list .active-1 {
+    background-color: #4ac0b0;
+  }
+  .pagination .page-list li a.active {
+    color: white;
+  }
+  #pagination-desk {
+    top: 1800px;
     position: absolute;
-    margin-top: 1810px;
+
+    margin-top: 20px;
   }
+
   .section-2 .article-content {
-    top: 160px;
-    margin-bottom: 100px;
-  }
-  .section-2 .pagination-mobile {
-    position: static;
+    height: fit-content;
+    margin: 0;
+    top: 166px;
+    padding: 0;
 
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
-
   .section-2 .article-content .col-2 {
     display: none;
   }
   .section-2 .article-content .col-1 {
     width: 100%;
+    margin: 0;
+    height: 1610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .article-content .article-item {
     position: relative;
-    width: 100%;
+    width: 288px;
     height: 306px;
-    margin-top: 15px;
+    top: 0;
     margin-bottom: 15px;
     background: #ffffff;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
+    margin: 0;
   }
   .article-content .content {
-    position: absolute;
+    position: relative;
     left: 12px;
     width: 264px;
+    height: fit-content;
 
     bottom: 15px;
+    margin-top: 0;
+    top: 80;
   }
   .article-content .article-item .pic img {
-    width: 100%;
+    width: 288px;
+    height: 165px;
   }
   .article-content .content .title h4 {
+    position: relative;
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
+    line-height: 150%;
+
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+    margin: 0;
+    top: 12px;
+    color: #373f66;
+    margin-bottom: 16px;
   }
   .article-content .content .read-more {
-    position: absolute;
+    position: relative;
     border-bottom: 1px #373f66 solid;
-
+    top: 0;
     width: 92px;
     padding: 0;
-    bottom: 38px;
+    margin-bottom: 17px;
+  }
+  .article-content .content .read-more label {
+    padding: 0;
   }
   .article-content .content .read-more img {
     position: absolute;
-
+    height: 20px;
+    width: 20px;
     right: 0;
   }
   .article-content .content .date label {
+    position: relative;
     font-size: 12px;
   }
   .article-content .content .share {
@@ -1657,8 +1696,9 @@ a {
     background-repeat: no-repeat;
   }
   .section-3 {
-    margin-top: 2120px;
+    margin-top: 83px;
     margin-bottom: 190px;
+    padding: 0;
   }
   .section-3 .popular-articles .title {
     position: relative;
