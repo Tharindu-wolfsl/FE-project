@@ -29,6 +29,9 @@ body {
 .main-content-1 {
   display: none;
 }
+#mobile {
+  display: none;
+}
 #col-3-hide {
   display: none;
 }
@@ -156,7 +159,7 @@ a {
 .section-1 .main-bar .title img {
   width: 122px;
   height: 68px;
-  margin-left: 121px;
+  margin-left: 153px;
 }
 .section-1 .main-bar .nav-btns {
   display: none;
@@ -694,27 +697,69 @@ a {
   background: #ffffff;
   border-radius: 15px;
 }
-.popular-articles .slide-item .content {
-  width: 310px;
-}
 
-.popular-articles .slide-item .content .desc p {
-  width: 310px;
-  height: 72px;
-  margin: 20px 20px 72px 20px;
-  font-family: "Noto Sans JP", sans-serif;
+.popular-articles #slide-end {
+  display: flex;
+  justify-content: center;
+}
+.popular-articles #slide-end .read-more {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px black solid;
+}
+.popular-articles #slide-end .read-more label {
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 12px;
   line-height: 150%;
-  /* or 24px */
+  margin: auto 0;
+  /* identical to box height, or 18px */
 
   letter-spacing: 0.08em;
 
   /* Kon */
 
   color: #373f66;
-  /* White */
+}
+.popular-articles #slide-end .read-more .arrow {
+  background-image: url("/assets/SVGS/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.popular-articles .slide-item .content {
+  width: 310px;
+}
+.popular-articles .slide-item .content .desc {
+  width: 310px;
+  height: 72px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.popular-articles .slide-item .content .desc #web {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  letter-spacing: 0.07em;
+
+  /* Kon */
+
+  color: #373f66;
 }
 
 .popular-articles .slide-item .other .date label.date {
@@ -1153,6 +1198,12 @@ a {
     height: fit-content;
     overflow: hidden;
   }
+  #web {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
   .header .nav {
     background-color: transparent;
     position: sticky;
@@ -1203,7 +1254,7 @@ a {
 
   .section-1 {
     margin-top: 0;
-    margin-bottom: 82px;
+    margin-bottom: 0;
     padding: 0;
 
     margin: 0;
@@ -1212,19 +1263,26 @@ a {
   .section-1 .main-bar {
     position: relative;
 
-    height: 63.5vh;
+    height: 416px;
     width: 100%;
+  }
+  .section-1 .main-bar .title img {
+    position: relative;
+
+    left: 10px;
   }
   .section-1 .main-bar .title {
     position: relative;
-    width: 50%;
+    width: fit-content;
     margin-bottom: 0;
     height: fit-content;
-    
+    left: 0;
 
     top: 31.6px;
   }
+
   .section-1 .main-bar .title .title_name {
+    display: block;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -1432,14 +1490,14 @@ a {
   /* //section2 */
 
   .section-2 {
-    margin-top: 82px;
-    height: 277vh;
+    height: 1800px;
     top: 0px;
+    margin-top: 82px;
   }
   .section-2 .articles {
     position: relative;
     /* background-color: #000000; */
-    height: 277vh;
+    height: 1760px;
   }
 
   .section-2 .head-title {
@@ -1599,20 +1657,19 @@ a {
     color: white;
   }
   #pagination-desk {
-    top: 1630px;
     position: relative;
+
+    bottom: 0;
     margin-top: 20px;
-   
-    
- 
   }
 
   .section-2 .article-content {
     height: fit-content;
     margin: 0;
     top: 166px;
-    padding: 0;
 
+    padding: 0;
+    margin-bottom: 0;
     margin-top: 20px;
   }
   .section-2 .article-content .col-2 {
@@ -1622,11 +1679,10 @@ a {
     width: 288px;
     margin: 0 auto;
     height: 1610px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
   }
   .article-content .article-item {
     position: relative;
@@ -1703,17 +1759,20 @@ a {
   }
   .section-3 {
     margin-top: 83px;
-    margin-bottom: 190px;
+
     padding: 0;
+
+    height: 335px;
+    margin-bottom: 0;
   }
   .section-3 .popular-articles .title {
     position: relative;
     left: 0;
-  
+
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
-    width: 110%;
+    width: 115%;
     overflow-x: hidden;
     overflow-y: clip;
   }
@@ -1753,83 +1812,133 @@ a {
   .popular-articles .slide-item {
     position: relative;
 
-    width: 255px;
-    height: 270px;
+    width: 231px;
+    height: 244px;
     /* White */
 
     background: #ffffff;
     border-radius: 15px;
   }
+  .popular-articles .slide-item .content {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+  }
   .popular-articles .slide-item .pic img {
-    width: 255px;
+    width: 231px;
 
     /* White */
   }
   .popular-articles .slide-item .content .desc {
-    width: 255px;
-    margin-top: 14px;
-  }
-  .popular-articles .slide-item .content .desc p {
-    font-size: 12px;
-    line-height: 150%;
+    width: 204px;
 
-    width: 93%;
-    height: fit-content;
-    margin: 6px auto;
+    margin: 12px;
+  }
+  .popular-articles .slide-item .content .desc #mobile {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+    width: 100%;
+
+    color: #373f66;
   }
   .popular-articles .slide-item .content .read-more {
     border: none;
-    left: 218px;
+    position: absolute;
+
+    width: fit-content;
+    bottom: 0;
   }
   .popular-articles .slide-item .content .read-more #rm-mobile {
     display: none;
   }
   .popular-articles .slide-item .content .other .date label {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
-    left: 10;
+    line-height: 150%;
+    /* or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    bottom: 0;
+    margin-top: 12px;
+    /* Kon */
+
+    color: #373f66;
+
+    opacity: 0.6;
   }
 
   .popular-articles .slide-section {
-    width: 1360px;
+    width: 1219px;
     top: 60px;
     overflow-x: hidden;
   }
   .popular-articles .slide-bar-mobile {
-    width: 1360px;
+    width: 1219px;
   }
 
   .section-4 {
+    position: relative;
     top: 0;
     margin-bottom: 0;
+    margin-top: 80px;
   }
 
   .section-4 .title {
-    bottom: 32;
+    position: relative;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 236px;
+    height: 20px;
+    margin: 0;
+    margin-bottom: 32px;
+    top: 0;
   }
   .section-4 .title h3 {
+    position: static;
     font-size: 20px;
-    left: 1px;
+    top: 0;
+    margin: auto 0;
+    padding: 0;
   }
   .section-4 .title .icon {
-    position: absolute;
-    left: 0;
-    top: 5px;
+    position: static;
     background-size: cover;
     width: 8px;
     height: 20px;
     background-position: center center;
+
+    margin: auto 0;
+    padding: 0;
   }
 
   .section-4 .image-raw {
     margin-top: 0px;
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: fit-content;
+    height: 555px;
+    margin: 0 auto;
   }
   .section-4 .image-raw .pic img {
-    width: 100%;
+    width: 288px;
     height: 165px;
     margin-bottom: 30px;
   }
@@ -1861,9 +1970,15 @@ a {
     flex-direction: column;
     justify-content: space-between; */
   }
+
+  #footer .footer-content {
+    top: 0;
+    margin: 0;
+  }
   footer .footer-content .main-content {
     width: 100%;
     top: 0;
+    margin-bottom: 50px;
   }
 
   footer .footer-content .main-content .drop {
@@ -1871,6 +1986,13 @@ a {
     position: relative;
     float: right;
     top: 10px;
+  }
+  #footer .footer-content ul {
+    margin-top: 30px;
+  }
+  #footer .footer-content ul li {
+    margin-bottom: 0;
+    margin-bottom: 16px;
   }
 
   .footer-content .main-content .row-1,
@@ -1951,127 +2073,39 @@ a {
     display: none;
     transition: ease-in 0.5s;
   }
+  #footer .footer-content .side-content {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  #footer .footer-content .side-content .bottom-bar .top-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 1023.5px) {
-  .container {
+  .section-2 .header {
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px rgba(0, 0, 0, 0.301) solid;
   }
-  .section-1 .main-bar .slide-item {
-    width: fit-content;
-    height: fit-content;
-  }
-  .section-1 .main-bar .slide-section #slide-bar1 {
-    width: 1080px;
-    height: fit-content;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition: 0.5s;
-  }
-
   .section-2 .header .nav-items {
-    position: relative;
-    bottom: 0;
-    top: 12px;
-    margin: auto auto;
-    height: fit-content;
-    width: fit-content;
+    position: static;
+    margin: auto;
+    margin-top: 14px;
   }
   .section-2 hr {
-    position: absolute;
-    bottom: 55;
-    margin: auto auto;
-    color: rgb(0, 0, 0.1);
-    width: 97%;
-  }
-  .article-content .article-item {
-    position: relative;
-    width: 80%;
-    margin: 25px auto;
-    height: max-content;
-    padding-bottom: 20px;
-  }
-  .article-content .content {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 90%;
-
-    height: fit-content;
-    top: 10px;
-
-    margin: auto auto;
-  }
-  .article-content .content .title {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .section-2 .article-content {
-    position: relative;
-    margin: 0;
-    top: 0;
-  }
-  .section-2 .article-content .col-1 {
-    position: relative;
-    top: 0;
-  }
-  .article-content .article-item .pic img {
-    position: relative;
-  }
-  .article-content .content .title h4 {
-    position: relative;
-  }
-  .section-2 .title {
-    position: relative;
-    top: 20px;
-    bottom: 10px;
-    margin: 0;
-  }
-  .section-2 .header {
-    position: relative;
-    top: 100px;
-    margin: 0;
-  }
-  .section-2 .pagination-mobile {
-    position: relative;
-    top: 0;
-    margin-bottom: 20px;
-    margin-top: 120px;
-  }
-  .section-2 .pagination-desk {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-  }
-  .section-3 {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    margin: 200px auto;
-  }
-  .section-4 .image-raw {
-    position: relative;
-    width: 70%;
-    margin: 20px auto;
-    height: fit-content;
-  }
-  .section-4 .image-raw .pic img {
-    margin: 20px auto;
+    display: none;
   }
 
   #footer .footer-content .side-content {
     position: relative;
-    width: 350px;
+    width: 400px;
     margin: auto;
   }
   #footer .footer-content .side-content .bottom-bar .top-img {
@@ -2123,7 +2157,9 @@ a {
     display: none;
   }
   /* header */
-
+  #mobile {
+    display: none;
+  }
   .header {
     position: relative;
     height: 30px;
@@ -2482,7 +2518,8 @@ a {
     margin: 0;
     top: 0;
     top: 120px;
-    height: fit-content;
+    height: 1400px;
+
     /* bottom: 0; */
   }
   .section-2 .head-title {
@@ -2576,10 +2613,9 @@ a {
     margin: 0;
     bottom: 0;
     top: 40px;
-
     padding: 0;
     height: fit-content;
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
 
   .section-2 .article-content .article-item {
@@ -2675,18 +2711,23 @@ a {
   }
   .section-2 .article-content .col-1 {
     width: 288px;
+    background-color: transparent;
   }
   .section-2 .article-content .col-2 {
     width: 288px;
+    background-color: transparent;
   }
   .section-2 .article-content .col-3 {
+    background-color: transparent;
     display: block;
     width: 288px;
   }
   .pagination {
-    top: 50;
-    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    top: 20;
     width: 469px;
+    margin-top: 20px;
   }
   .pagination .page-list {
     width: 469px;
@@ -2783,8 +2824,9 @@ a {
     top: 0;
     margin: 0;
     right: 0;
-    top: 350px;
-    margin-bottom: 520px;
+    height: 470px;
+
+    margin-top: 120px;
   }
   .section-3 .nav-btns {
     margin: 0;
@@ -2845,9 +2887,13 @@ a {
     background: #ffffff;
     border-radius: 15px;
   }
-  .popular-articles .slide-item .content .desc p {
+  .popular-articles .slide-item .content .desc {
     width: 267px;
     height: 84px;
+    margin: 0;
+    margin: 20px;
+  }
+  .popular-articles .slide-item .content .desc #web {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -2872,9 +2918,11 @@ a {
   .section-4 {
     position: relative;
 
+    height: 240px;
     margin: 0;
     top: 0;
-    margin-bottom: 300px;
+    margin-bottom: 120px;
+    margin-top: 120px;
   }
   .section-4 .title {
     width: fit-content;
@@ -3126,6 +3174,9 @@ a {
     width: 100%;
     overflow-x: clip;
     margin: 0 auto;
+  }
+  #mobile {
+    display: none;
   }
   .container {
     width: 1180px;
@@ -3426,6 +3477,8 @@ a {
     bottom: 0;
     margin-bottom: 75px;
     height: fit-content;
+
+    height: 1395px;
   }
   .section-2 .articles {
     position: relative;
@@ -3576,12 +3629,9 @@ a {
     position: relative;
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: bold;
-
+    font-weight: 700;
     font-size: 16px;
-
     line-height: 150%;
-
     /* or 24px */
 
     letter-spacing: 0.08em;
@@ -3622,8 +3672,9 @@ a {
 
     margin: 0;
     padding: 0;
-    top: 90px;
+    top: 25px;
     bottom: 0;
+    margin-top: 30px;
   }
   .section-2 .pagination .page-list {
     width: 460px;
@@ -3685,9 +3736,11 @@ a {
   }
   .section-3 {
     position: relative;
-    top: 300px;
+    top: 0;
+    margin-top: 170px;
 
-    margin: 0;
+    height: 480px;
+    margin-bottom: 0;
   }
   .section-3 .title {
     width: fit-content;
@@ -3773,9 +3826,9 @@ a {
   .section-4 {
     position: relative;
 
+    top: 0;
     margin: 0;
-    top: 500px;
-    margin-bottom: 300px;
+    margin-top: 169px;
   }
   .section-4 .title {
     width: fit-content;
@@ -3838,7 +3891,7 @@ a {
 
   #footer {
     position: relative;
-    top: 360px;
+    top: 160px;
     height: 658px;
     background-size: cover;
     background-position: center center;
