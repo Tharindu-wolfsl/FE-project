@@ -486,7 +486,7 @@ a {
   width: 47.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: c;
 }
 .section-2 .article-content .col-2 {
   width: 47.5%;
@@ -1128,7 +1128,7 @@ a {
   }
 
   .container {
-    width: 288px;
+    width: 76.8%;
     left: 0;
     margin-left: 16px;
     margin: 0 auto;
@@ -1217,9 +1217,10 @@ a {
   }
   .section-1 .main-bar .title {
     position: relative;
-    width: 100%;
+    width: 50%;
     margin-bottom: 0;
     height: fit-content;
+    
 
     top: 31.6px;
   }
@@ -1535,6 +1536,7 @@ a {
     width: 288px;
     top: 30px;
     height: 24px;
+    margin: auto;
   }
 
   .pagination .page-list {
@@ -1597,10 +1599,12 @@ a {
     color: white;
   }
   #pagination-desk {
-    top: 1800px;
-    position: absolute;
-
+    top: 1630px;
+    position: relative;
     margin-top: 20px;
+   
+    
+ 
   }
 
   .section-2 .article-content {
@@ -1615,12 +1619,14 @@ a {
     display: none;
   }
   .section-2 .article-content .col-1 {
-    width: 100%;
-    margin: 0;
+    width: 288px;
+    margin: 0 auto;
     height: 1610px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    
   }
   .article-content .article-item {
     position: relative;
@@ -1703,7 +1709,7 @@ a {
   .section-3 .popular-articles .title {
     position: relative;
     left: 0;
-    bottom: 32px;
+  
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
