@@ -52,7 +52,7 @@
          console.log(pos);
    
      
-         document.getElementById("next").disabled = false;
+         document.querySelector(".popular-articles .nav-btns #next").disabled = false;
    
        });
    
@@ -116,8 +116,7 @@
        console.log(pos);
  
    
-       document.getElementById("next").disabled = false;
- 
+       document.querySelector(".popular-articles .nav-btns #next").disabled =false;
      });
  
 
