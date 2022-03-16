@@ -351,7 +351,8 @@ a {
   text-align: center;
   display: flex;
   justify-content: center;
-  border: 2px #4ac0b1 solid;
+  border: 1px solid #4ac0b1;
+  box-sizing: border-box;
   border-radius: 5px;
   background-color: #ffffff;
 }
@@ -361,6 +362,9 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  height: fit-content;
+  width: fit-content;
+  border: none;
   /* identical to box height, or 24px */
 
   letter-spacing: 0.08em;
@@ -382,9 +386,13 @@ a {
 }
 .bottom .list .nav-items .list-block a img {
   position: relative;
-  margin-right: 0;
+  height: fit-content;
+  width: fit-content;
+  margin: auto 0;
+
   margin-right: 10px;
-  margin-left: 0;
+
+  border: none;
 }
 .bottom .list .nav-items .list-block .search-btn {
   position: relative;
