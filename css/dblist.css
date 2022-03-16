@@ -134,6 +134,12 @@ a {
   top: 70px;
 
   margin-bottom: 100px;
+
+}
+.section-1 .container{
+
+
+  border-bottom: 1px solid #373F66;
 }
 .section-1 .top {
   position: relative;
@@ -170,6 +176,7 @@ a {
   margin-bottom: 30px;
 }
 .top .left-side .label-1 {
+  font-family: "Noto Sans JP", sans-serif;
   width: 707px;
   height: 48px;
   font-style: normal;
@@ -241,6 +248,7 @@ a {
   border-bottom: 1px solid #373f66;
 }
 .top .left-side .read-more .label-2 {
+  font-family: "Noto Sans JP", sans-serif;
   border: none;
   margin: auto;
   margin-left: 0;
@@ -284,6 +292,7 @@ a {
   height: 36px;
 }
 .section-1 .middle p span {
+  font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -297,6 +306,7 @@ a {
   color: #373f66;
 }
 .section-1 .middle p {
+  font-family: "Noto Sans JP", sans-serif;
   position: relative;
 
   font-style: normal;
@@ -413,7 +423,7 @@ a {
 }
 .bottom .list .nav-items .search-btn img {
   position: absolute;
-  top: 7px;
+  top:7px;
   left: 0;
   left: 17px;
   height: fit-content;
@@ -435,9 +445,41 @@ a {
   font-weight: 700;
 }
 .section-1 hr {
-  position: relative;
-  width: 100%;
-}
+  display: none;}
+
+  .section-2{
+
+    background-color: #000000a3;
+  }
+  .section-2 .top-menu{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+      }
+
+    .section-2 .top-menu .left-item img{
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      left: 0;
+
+      
+    }
+    .section-2 .top-menu .left-item span{
+     
+      height: 36px;
+      width: 514px;
+      font-family: "Noto Sans JP", sans-serif; 
+      background-color: #38f9d7;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.08em;
+      color: #373F66;
+      
+      
+    }
 /* footer */
 
 #footer {
