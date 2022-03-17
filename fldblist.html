@@ -83,6 +83,11 @@
                 alt=""
               />
               <img id="tab" src="/assets/DB LIST/right-arrow.svg" alt="" />
+              <img
+                id="mobile-arrow"
+                src="/assets/DB LIST/mobile/right-arrow.svg"
+                alt=""
+              />
             </button>
             <a class="read-more" href="#"
               ><label for="" class="label-2">掲載方法はこちら</label
@@ -91,7 +96,14 @@
           </div>
           <div class="right-side">
             <img
+              id="desk-img"
               src="/assets/DB LIST/Group 125521.svg"
+              alt=""
+              class="title-img"
+            />
+            <img
+              id="mobile-img"
+              src="/assets/DB LIST/Group 126104.svg"
               alt=""
               class="title-img"
             />
@@ -156,8 +168,8 @@
             </ul>
             <div id="list-block-mobile">
               <button class="search-btn" id="search-btn">
-                <img src="/assets/DB LIST/Group 125791.svg" alt="" /><span
-                  >絞り込む：フィルター適用中</span
+                <img src="/assets/DB LIST/Group 125791.svg" alt="" /><label
+                  >絞り込む： <span>フィルター適用中</span></label
                 >
               </button>
             </div>
@@ -236,12 +248,36 @@
           <div class="right-item">
             <label for="#">Sorting</label
             ><a href="#"
-              ><span>更新日順</span
+              ><span id="desk-span">更新日順</span
+              ><span id="mobile-span">最新順</span
               ><img src="/assets/DB LIST/right-arrow(no-line).svg" alt=""
             /></a>
           </div>
         </div>
         <div class="content-menu">
+          <div class="pagination pagination-mobile">
+            <ul class="page-list">
+              <li>
+                <a href="#" id="prev"
+                  ><img
+                    src="/assets/SVGS/20px/20px/right-arrow(no-line).svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="active-1"><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li id="middle-li"><a href="#" id="middle">...</a></li>
+              <li><a href="#">11</a></li>
+              <li><a href="#">12</a></li>
+              <li id="hide-num"><a href="#">13</a></li>
+              <li>
+                <a href="#" id="next"
+                  ><img src="/assets/SVGS/right-arrow(no-line).svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
           <div class="articles">
             <div class="col-1">
               <div class="item item-1">
