@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  --border: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  --Sora: "Sora", cursive;
+  --Noto-JP: "Noto+Sans+JP", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+}
+body {
+  /* News */
+
+  /* Off White */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  width: 320px;
+}
+
+.container {
+  width: 320px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.section-1 {
+  width: 100%;
+  margin-top: 20px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+.list {
+  width: 100%;
+  height: 463.5px;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #4ac0b1;
+  border-radius: 10px;
+}
+
+.list .item {
+  position: relative;
+  width: 288px;
+  height: 66px;
+  border: none;
+  outline: none;
+
+  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.list .item label {
+  position: relative;
+  justify-content: start;
+  top: 0;
+  border: none;
+  margin: 0;
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+}
+.list .item .drop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 288px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffffff;
+  /* Green */
+
+  border: 1px solid #4ac0b1;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.list .item .drop label {
+  height: 18px;
+  width: 192px;
+  display: flex;
+  justify-content: start;
+  margin: auto 0;
+  margin-left: 12px;
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+}
+.list .item .drop img {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  right: 0;
+  margin: 0;
+  border: none;
+  top: 0;
+
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.list .list-bottom {
+  position: sticky;
+  width: 100%;
+  height: 46px;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list .list-bottom button {
+  height: 46px;
+  margin: 0;
+  width: 160px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.list .list-bottom .btn-left {
+  background: #ffffff;
+  border-radius: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.list .list-bottom .btn-right {
+  background: #4ac0b1;
+  border-radius: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.list .list-bottom .btn-left label {
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+  margin: auto;
+}
+.list .list-bottom .btn-right label {
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  /* White */
+
+  color: #ffffff;
+  margin-top: 13px;
+}
+.list .list-bottom .btn-right img {
+  height: 16px;
+  width: 16px;
+  border: none;
+  margin-top: 13px;
+  margin-right: 8px;
+}
+
+/* drop list style */
+.drop-list {
+  visibility: visible;
+}
+.list {
+  visibility: hidden;
+}
+
+.drop-list {
+  position: fixed;
+  width: 100%;
+  height: 463.5px;
+  background: #f9f9f9;
+  margin: 0;
+  border: none;
+  top: 20px;
+  margin-left: 0;
+  left: 0;
+}
+
+.drop-list .title {
+  position: relative;
+  top: 0;
+  height: 58px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #373f6615;
+}
+.drop-list .title label {
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  /* Green */
+
+  color: #4ac0b1;
+  margin-left: 16px;
+}
+
+.drop-list .title img {
+  margin: 0;
+  height: 26px;
+  width: 26px;
+  margin: auto 0;
+  margin-right: 16px;
+}
+.drop-list .selection {
+  background: #ffffff;
+  height: fit-content;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #38f9d7;
+  overflow-y: scroll;
+}
+.drop-list .selection::-webkit-scrollbar {
+  width: 4px;
+}
+.drop-list .selection::-webkit-scrollbar-thumb {
+  background: #4ac0b1;
+  border-radius: 10px;
+}
+.drop-list .selection li {
+  position: relative;
+  height: 50px;
+  width: 288px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0 auto;
+}
+
+.drop-list .selection li input {
+  margin: auto 0;
+  margin-top: 15px;
+  height: 20px;
+  width: 20px;
+}
+.drop-list .selection li label {
+  position: absolute;
+
+  margin: 0;
+  top: 0;
+  margin-top: 15px;
+
+  margin-left: 12px;
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  height: fit-content;
+
+  /* or 21px */
+
+  letter-spacing: 0.08em;
+
+  /* Kon */
+
+  color: #373f66;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.drop-list .bottom {
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+}
+.drop-list .bottom button {
+  width: 100%;
+  height: 46px;
+  border: none;
+  background: #4ac0b1;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.drop-list .bottom button span {
+  margin-top: 13px;
+  font-family: var(--Noto-JP);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  /* White */
+
+  color: #ffffff;
+}
