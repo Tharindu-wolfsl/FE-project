@@ -1,4 +1,5 @@
-   
+
+
 if(mediaQuery1.matches){
     var cb = document.getElementById('check-0');
     var cb1 = document.getElementById('check-1');

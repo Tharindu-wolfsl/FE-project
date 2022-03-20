@@ -23,6 +23,13 @@ body {
   background-color: #f9f9f9;
 }
 
+button {
+  opacity: 0.7;
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
 .checkbox {
   visibility: hidden;
 }
@@ -252,12 +259,10 @@ a {
 }
 .section-1 .content .date p {
   font-family: Sora, sans-serif;
-
   font-size: 16px;
   line-height: 150%;
-  color: #444444;
+  color: #373f66;
   opacity: 0.6;
-  margin: 0 0 22px 20px;
 }
 .section-1 .main-bar .content .date {
   margin-bottom: 20px;
@@ -269,8 +274,8 @@ a {
   width: 100%;
 }
 .section-1 .main-bar .content .date img {
-  height: 24px;
-  width: 24px;
+  /* height: 24px; */
+  /* width: 24px; */
 }
 .section-1 .side-bar {
   position: absolute;
@@ -358,6 +363,9 @@ a {
 
   opacity: 0.6;
 }
+.side-bar .content-box .read-more p {
+  color: #373f66;
+}
 .side-bar .content-box .read-more {
   font-size: 12px;
 }
@@ -438,20 +446,25 @@ a {
 }
 .section-2 hr {
   position: absolute;
-  height: 2px;
+
   width: 98%;
-  color: rgb(0, 0, 0.2);
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
   top: 124px;
   z-index: 0;
-  left: 12px;
+  background-color: #e1e1e1;
+  z-index: 0;
+  /* left: 12px; */
 }
 .section-2 .header .nav-items li a {
-  padding: 25px 15px;
+  position: relative;
+  padding: 29px 15px 29px 15px;
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+  top: 4px;
 
   /* identical to box height, or 24px */
 
@@ -461,15 +474,37 @@ a {
 
   /* Green */
 }
-.section-2 .header .nav-items li a:hover {
-  /* Green */
+.section-2 .header .nav-items li a:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  border: none;
+  bottom: 0;
+  left: 0;
+  background-color: #4ac0b1;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+#tab-1:active::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  border: none;
+  bottom: 0;
+  left: 0;
+  background-color: #4ac0b1;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+#tab-1:active {
   color: #4ac0b1;
-  border-bottom: 4px #4ac0b1 solid;
 }
 
-.active {
+.section-2 .header .nav-items li a:hover {
   color: #4ac0b1;
-  border-bottom: 4px #4ac0b1 solid;
+  transition: 0.25s;
 }
 
 /* Articles */
@@ -630,7 +665,7 @@ a {
 } */
 #middle {
   letter-spacing: 0.2em;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 /* section3 */
@@ -753,15 +788,22 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  width: fit-content;
+
   /* or 24px */
 
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
 
   /* Kon */
 
   color: #373f66;
+  border: none;
 }
-
+.popular-articles .slide-item .content .desc #web span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+}
 .popular-articles .slide-item .other .date label.date {
   position: absolute;
   bottom: 20px;
@@ -787,7 +829,7 @@ a {
   right: 20px;
   display: flex;
   flex-direction: row;
-  width: 92px;
+  width: fit-content;
   border-bottom: 1px #373f66 solid;
   padding: 0;
   height: 18px;
@@ -798,6 +840,8 @@ a {
   font-weight: bold;
   font-size: 12px;
   line-height: 150%;
+  width: fit-content;
+
   /* identical to box height, or 18px */
 
   letter-spacing: 0.08em;
@@ -808,10 +852,13 @@ a {
   color: #373f66;
 }
 .popular-articles .slide-item .other .read-more .arrow {
+  position: relative;
   background-image: url("/assets/SVGS/right-arrow.svg");
   height: 20px;
   width: 20px;
-  margin-left: 5px;
+
+  left: 0;
+  margin-left: 8px;
   margin-right: 0;
 }
 
@@ -1186,8 +1233,8 @@ a {
   }
   .header .logo {
     position: absolute;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     margin: 0 0;
     top: 0;
   }
@@ -1376,7 +1423,7 @@ a {
     flex-direction: row;
     color: #373f66;
     margin: 12px 12px 15px 12px;
-    width: 92px;
+    width: fit-content;
     height: 20px;
 
     padding: 0;
@@ -1387,8 +1434,7 @@ a {
   .section-1 .mobile-content .read-more img {
     width: 16px;
     height: 16px;
-
-    margin-left: 10px;
+    margin-left: 8px;
     padding: 0;
   }
   .section-1 .mobile-content .read-more p {
@@ -1546,15 +1592,23 @@ a {
     margin-top: 32px;
     overflow-x: scroll;
     overflow-y: clip;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    z-index: 0;
   }
   .section-2 hr {
-    top: 110;
-
-    margin: auto 0;
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    margin: 0 auto;
     color: rgb(0, 0, 0.1);
     width: 93%;
     opacity: 0.4;
+
+    margin-bottom: 30px;
+
+    /* border-width: 2px; */
+    border-radius: 2px;
+    z-index: 1;
   }
   .section-2 .header::-webkit-scrollbar {
     display: none;
@@ -1572,12 +1626,15 @@ a {
     margin: auto 5px;
     width: max-content;
     text-align: center;
+    z-index: 2;
+    height: fit-content;
 
     /* Green */
   }
   .section-2 .header .nav-items li a {
     font-size: 12px;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     padding-right: 6px;
     padding-left: 6px;
 
@@ -1585,14 +1642,39 @@ a {
 
     /* Green */
   }
-
+  .section-2 .header .nav-items li a:hover::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border: none;
+    bottom: 0;
+    left: 0;
+    background-color: #4ac0b1;
+    border-radius: 4px;
+    transition: 0.25s;
+    z-index: 4;
+  }
+  #tab-1:active::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border: none;
+    bottom: 0;
+    left: 0;
+    background-color: #4ac0b1;
+    border-radius: 4px;
+    transition: 0.25s;
+    z-index: 5;
+  }
   #hide-num {
     display: none;
   }
   .section-2 .pagination {
     display: block;
     width: 288px;
-    top: 30px;
+    /* top: 30px; */
     height: 24px;
     margin: auto;
   }
@@ -1639,7 +1721,9 @@ a {
     color: #373f66;
   }
   #middle {
+    position: relative;
     letter-spacing: 0.08em;
+    top: 1px;
   }
   #middle-li {
     position: relative;
@@ -1658,11 +1742,13 @@ a {
   }
   #pagination-desk {
     position: relative;
-
     bottom: 0;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
+  .section-2 .articles {
+    height: 1796px;
+  }
   .section-2 .article-content {
     height: fit-content;
     margin: 0;
@@ -2226,7 +2312,7 @@ a {
 
     padding: 0;
   }
-  .header .nav .nav-items img {
+  .header .nav .nav-items li img {
     margin-left: 4px;
     position: relative;
     height: 20px;
@@ -2262,9 +2348,10 @@ a {
     background-position: center;
     background-size: contain;
     border: none;
-    top: 0px;
+
     color: white;
-    margin-left: 10px;
+    top: -3px;
+    margin-left: 4px;
   }
   .header .login img {
     position: relative;
@@ -2275,7 +2362,8 @@ a {
   }
 
   .header .nav-btn button {
-    margin: 3px auto;
+    margin: 0 auto;
+    margin-bottom: 4px;
   }
 
   /* section1 */
@@ -2317,9 +2405,11 @@ a {
     width: 518px;
     position: relative;
     top: 0;
+    top: 55px;
     margin: 0;
     padding: 0;
-    margin-top: 85px;
+    margin-top: 40px;
+
     height: 468px;
   }
   .section-1 .main-bar .content h3 {
@@ -2382,7 +2472,7 @@ a {
     position: absolute;
     margin: 0;
     top: 0;
-    top: 217px;
+    top: 227px;
     width: 356px;
     height: 468px;
   }
@@ -2431,13 +2521,13 @@ a {
   .section-1 .content .read-more {
     position: relative;
     margin: 0 0 20px 20px;
-    width: 110px;
+    width: fit-content;
     top: 0;
     bottom: 0;
   }
   .section-1 .content .read-more img {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 8px;
   }
   .section-1 .content .share {
     position: absolute;
@@ -2461,7 +2551,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 131px;
-
+    height: 20px;
     top: 0;
     right: 0;
     left: 0;
@@ -2480,17 +2570,28 @@ a {
   .side-bar .content-box .read-more p {
     left: 0;
     top: 0;
+    height: 16px;
 
     font-size: 12px;
+    margin: auto 0;
   }
 
   .section-1 .main-bar .content .date {
     position: relative;
     font-size: 14px;
     height: 20px;
-
+    width: 478px;
     top: 0;
     bottom: 0;
+    margin-left: 20px;
+  }
+  .section-1 .main-bar .content .date img {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
   }
   .section-1 .main-bar .content .date p {
     font-size: 14px;
@@ -2603,10 +2704,16 @@ a {
   .section-2 hr {
     position: relative;
     top: 0;
-    margin: auto 0;
+    margin: 0 auto;
     color: rgb(0, 0, 0.1);
     width: 97.5%;
     opacity: 0.4;
+    border-radius: 0;
+    border-width: 2px;
+    /* border-radius: 50%; */
+  }
+  .section-2 .articles {
+    height: 1226px;
   }
   .section-2 .article-content {
     position: relative;
@@ -2708,6 +2815,7 @@ a {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    right: 0;
   }
   .section-2 .article-content .col-1 {
     width: 288px;
@@ -2725,9 +2833,11 @@ a {
   .pagination {
     position: relative;
     bottom: 0;
-    top: 20;
+
     width: 469px;
     margin-top: 20px;
+
+    width: fit-content;
   }
   .pagination .page-list {
     width: 469px;
@@ -2743,13 +2853,15 @@ a {
     padding: 0;
     height: 30px;
     width: 30px;
+    top: 0;
   }
   .pagination .page-list li a {
     margin: 0;
     padding: 0;
     border: none;
     position: relative;
-    top: 3px;
+    top: 4px;
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -2767,6 +2879,8 @@ a {
     top: 0;
     margin: 0;
     bottom: 50px;
+    font-size: 16px;
+    top: 4px;
   }
   .section-2 .page-list #middle-list {
     position: relative;
@@ -2855,7 +2969,7 @@ a {
     padding: 0;
 
     top: 0;
-    width: 2000px;
+    width: 2020px;
   }
   .popular-articles #slide-bar {
     justify-content: start;
@@ -2880,7 +2994,8 @@ a {
 
     width: 315px;
     height: 346px;
-    margin: auto 10px;
+    margin: 0;
+    margin-right: 20px;
 
     /* White */
 
@@ -2898,6 +3013,7 @@ a {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
+    width: 275px;
     /* or 21px */
 
     letter-spacing: 0.08em;
@@ -2925,14 +3041,14 @@ a {
     margin-top: 120px;
   }
   .section-4 .title {
-    width: fit-content;
     height: fit-content;
     padding: 0;
     margin: 0;
     top: 0;
     bottom: 0;
-    width: 400px;
+    width: 373px;
     margin-bottom: 50px;
+    left: 0;
 
     display: flex;
     flex-direction: row;
@@ -2962,7 +3078,7 @@ a {
     margin: auto;
     font-size: 32px;
     line-height: 150%;
-    left: 10px;
+    left: 0;
     margin-bottom: 0;
     /* or 48px */
 
@@ -2974,19 +3090,21 @@ a {
   }
   .section-4 #image-raw-1 {
     position: absolute;
-    display: block;
+
     width: 100%;
 
+    left: 0;
+    width: 903px;
     margin: 0;
     top: 80px;
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     overflow: hidden;
     justify-content: space-between;
   }
   .section-4 #img-raw-1 .pic {
     position: relative;
-
+    margin: 0;
     /* White */
 
     background: #ffffff;
@@ -3183,8 +3301,7 @@ a {
     margin: 0 auto;
   }
   .header {
-    margin-top: 30px;
-    height: 40px;
+    z-index: 1;
   }
   .header .nav .nav-items {
     width: 761px;
@@ -3261,7 +3378,7 @@ a {
   }
 
   .section-1 {
-    height: 744px;
+    height: 750px;
     margin-top: 60px;
     margin-bottom: 0px;
   }
@@ -3290,7 +3407,7 @@ a {
     background-color: white;
     height: 594px;
     padding: 0;
-    top: 20px;
+    margin-top: 30px;
     left: 0;
     border-radius: 15px;
   }
@@ -3304,15 +3421,36 @@ a {
     margin: 0 auto;
     height: 20px;
     padding: 0;
-    top: 18px;
+    margin-top: 20px;
   }
   .section-1 .main-bar .content .read-more {
     position: relative;
     bottom: 0;
     top: 0;
+    height: 20px;
+    width: fit-content;
+    border: none;
+    padding: none;
+  }
+  .section-1 .main-bar .content .read-more p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.08em;
+
+    color: #373f66;
+    margin: 0;
   }
   .section-1 .main-bar .content .read-more img {
     position: relative;
+    margin: 0;
+    margin-left: 8px;
   }
 
   .section-1 .content .carousel {
@@ -3328,6 +3466,8 @@ a {
   }
   .section-1 .content h3 {
     position: relative;
+    width: 660px;
+    height: 69px;
 
     font-style: normal;
     font-weight: 700;
@@ -3400,30 +3540,44 @@ a {
     height: fit-content;
     bottom: 0;
   }
-  .section-1 .date p {
+  .section-1 .side-bar .mid {
+    position: relative;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  .side-bar .content-box h4 {
     position: relative;
     margin: 0;
-    padding: 0%;
-    height: fit-content;
-    margin: auto 0;
-    right: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    top: 0;
+    left: 0;
   }
-  .section-1 .date img {
+  .side-bar .content-box .read-more {
+    position: relative;
     margin: 0;
-    padding: 0%;
-    height: 30px;
-    width: 30px;
+    top: 0;
+    margin-top: 10px;
+    left: 0;
+    height: 18px;
+  }
+  .side-bar .content-box .read-more p {
+    color: #373f66;
 
+    width: fit-content;
+    height: 16px;
     margin: auto 0;
+  }
+  .side-bar .content-box .read-more .arrow {
+    width: 20px;
+    height: 20px;
   }
 
   .section-1 .side-bar {
     position: absolute;
     width: 420px;
-    top: 150px;
+    top: 0;
+    margin-top: 160px;
     height: 594px;
     margin-left: 60px;
 
@@ -3433,7 +3587,9 @@ a {
     position: relative;
     width: 360px;
     height: 104px;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   .side-bar .content-box::before {
     content: "";
@@ -3473,18 +3629,16 @@ a {
     position: relative;
     margin: 0;
     top: 0;
-    top: 160px;
+    margin-top: 160px;
     bottom: 0;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
     height: fit-content;
-
-    height: 1395px;
+    height: 1335px;
   }
   .section-2 .articles {
     position: relative;
-
     width: 100%;
-    height: fit-content;
+    height: 1250px;
   }
   .section-2 .head-title {
     width: fit-content;
@@ -3514,24 +3668,23 @@ a {
     font-weight: 700;
     font-size: 32px;
     line-height: 150%;
-    left: 20px;
+    margin-left: 20px;
     margin-bottom: 0;
     /* or 48px */
-
     letter-spacing: 0.08em;
 
     /* Kon */
-
     color: #373f66;
   }
 
   .section-2 .header {
     margin-top: 0;
-    top: 40px;
+    top: 0;
+    margin-top: 60px;
     padding: 0;
     height: 80px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .section-2 .header .nav-items li a {
@@ -3543,6 +3696,7 @@ a {
     padding: 28px 12px;
 
     line-height: 150%;
+
     /* identical to box height, or 21px */
 
     letter-spacing: 0.08em;
@@ -3566,10 +3720,18 @@ a {
   .section-2 hr {
     position: relative;
     top: 0;
-    margin: auto 0;
-    color: rgb(0, 0, 0.1);
+    bottom: 0;
+    margin: 0 auto;
+
     width: 97.5%;
     opacity: 0.4;
+    border-radius: 2px;
+    border-width: 2px;
+    z-index: 0;
+  }
+
+  .section-2 .articles {
+    height: 1272px;
   }
   .section-2 .article-content {
     position: relative;
@@ -3582,12 +3744,15 @@ a {
   }
   .section-2 .article-content .col-1 {
     width: 575px;
+    height: fit-content;
     display: flex;
+
     flex-direction: column;
     justify-content: space-between;
   }
   .section-2 .article-content .col-2 {
     width: 575px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3595,6 +3760,7 @@ a {
 
   .article-content .article-item {
     position: relative;
+
     width: 575px;
     height: 180px;
     margin: 0;
@@ -3624,9 +3790,19 @@ a {
   .section-2 .content .date {
     position: relative;
     top: 80px;
+    height: fit-content;
+
+    margin-top: 15px;
+  }
+  .article-content .content .share {
+    height: 30px;
+    width: 30px;
+    top: 112px;
+    right: 0;
   }
   .article-content .content .title h4 {
     position: relative;
+
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -3658,6 +3834,7 @@ a {
     top: 0;
     padding: 0;
     margin: 0;
+
     margin: auto 0;
   }
   .article-content .content .read-more img {
@@ -3669,12 +3846,11 @@ a {
     left: 358px;
     width: 460px;
     height: 30px;
-
     margin: 0;
     padding: 0;
-    top: 25px;
     bottom: 0;
     margin-top: 30px;
+    /* background-color: #000000; */
   }
   .section-2 .pagination .page-list {
     width: 460px;
@@ -3689,7 +3865,7 @@ a {
   }
   .section-2 .pagination .page-list li {
     position: relative;
-    top: 5px;
+
     margin: 0;
     padding: 0;
     width: 30px;
@@ -3721,6 +3897,7 @@ a {
     top: 0;
     margin: 0;
     bottom: 40px;
+    font-size: 16px;
   }
   .section-2 .page-list #middle-list {
     position: relative;
@@ -3737,7 +3914,7 @@ a {
   .section-3 {
     position: relative;
     top: 0;
-    margin-top: 170px;
+    margin-top: 160px;
 
     height: 480px;
     margin-bottom: 0;
@@ -3786,19 +3963,27 @@ a {
     top: 0%;
     top: 25px;
 
-    width: fit-content;
+    width: 133.8px;
+    box-sizing: border-box;
   }
   .section-3 .nav-btns #prev {
     height: 50px;
     width: 50px;
-    margin: 0 13px;
+    margin: 0;
+    margin-right: 30px;
+    box-sizing: border-box;
     background-size: cover;
   }
   .section-3 .nav-btns #next {
     height: 50px;
     width: 50px;
-    margin: 0 13px;
+    margin: 0;
     background-size: cover;
+    right: 0;
+    padding: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    left: 0;
   }
   .section-3 .popular-articles .slide-section {
     top: 60px;
@@ -3806,7 +3991,7 @@ a {
   }
 
   .section-3 .popular-articles #slide-bar {
-    width: 1870px;
+    width: 1900px;
     margin-top: 0;
     top: 0;
   }
@@ -3815,7 +4000,8 @@ a {
 
     width: 350px;
     height: 366px;
-    margin: 0 10px;
+    margin: 0;
+    margin-right: 30px;
 
     /* White */
 
@@ -3828,30 +4014,32 @@ a {
 
     top: 0;
     margin: 0;
-    margin-top: 169px;
+    margin-top: 160px;
   }
   .section-4 .title {
     width: fit-content;
-    height: fit-content;
+    height: 40px;
     padding: 0;
     margin: 0;
     top: 0;
     bottom: 0;
     left: 0;
     width: 380px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .section-4 .title .title_name {
-    position: relative;
+    position: absolute;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 150%;
-    left: 0px;
+    left: 10px;
+    top: 0;
+    margin-top: 0;
     margin-bottom: 0;
     /* or 48px */
 
