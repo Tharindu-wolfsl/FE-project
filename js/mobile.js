@@ -14,8 +14,8 @@
 
     next1.addEventListener("click",()=>{
 
-    pos1-=270;
-      if(pos1==-810){
+    pos1-=245;
+      if(pos1==-735){
 
         document.getElementById("next1").disabled = true;
         
@@ -38,7 +38,7 @@
       
       
     prev1.addEventListener("click",()=>{
-      pos1+=270;
+      pos1+=245;
      
 
         if(pos1==0){

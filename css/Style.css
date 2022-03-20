@@ -387,9 +387,10 @@ a {
   position: relative;
 }
 .section-2 .articles .title {
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: 60px;
+
+  top: 0;
   padding: 0;
 }
 .section-2 .articles .title .icon {
@@ -1432,10 +1433,12 @@ a {
   }
 
   .section-1 .mobile-content .read-more img {
+    position: relative;
     width: 16px;
     height: 16px;
     margin-left: 8px;
     padding: 0;
+    top: 2px;
   }
   .section-1 .mobile-content .read-more p {
     font-family: "Noto Sans JP";
@@ -1499,7 +1502,8 @@ a {
     background-image: url("/assets/nav/Group\ 124404.png");
     width: 26px;
     height: 26px;
-    margin: 0 5px;
+    margin: 0;
+    margin-right: 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1510,7 +1514,7 @@ a {
     background-image: url("/assets/nav/Group\ 124469.png");
     width: 26px;
     height: 26px;
-    margin: 0 5px;
+    margin: 0;
     border: none;
     background-size: cover;
     background-position: center center;
@@ -1536,9 +1540,10 @@ a {
   /* //section2 */
 
   .section-2 {
-    height: 1800px;
+    height: 1840px;
     top: 0px;
-    margin-top: 82px;
+    margin-top: 80px;
+    /* background-color: #000000; */
   }
   .section-2 .articles {
     position: relative;
@@ -1589,7 +1594,7 @@ a {
   .section-2 .header {
     top: 0px;
     height: 50px;
-    margin-top: 32px;
+    margin-top: 30px;
     overflow-x: scroll;
     overflow-y: clip;
     margin-bottom: 0px;
@@ -1783,17 +1788,26 @@ a {
   }
   .article-content .content {
     position: relative;
-    left: 12px;
+    /* left: 12px; */
     width: 264px;
-    height: fit-content;
-
+    height: 117px;
     bottom: 15px;
     margin-top: 0;
-    top: 80;
+    left: 0;
+    margin-left: 12px;
+    top: 0;
+    margin-top: 12px;
+
+    /* top: 80; */
   }
   .article-content .article-item .pic img {
     width: 288px;
     height: 165px;
+  }
+  .article-content .content .title {
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 11px;
   }
   .article-content .content .title h4 {
     position: relative;
@@ -1802,18 +1816,18 @@ a {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
+    margin: 0;
 
     /* or 21px */
 
     display: flex;
     align-items: center;
     letter-spacing: 0.08em;
-
+    height: 56px;
     /* Kon */
     margin: 0;
-    top: 12px;
+
     color: #373f66;
-    margin-bottom: 16px;
   }
   .article-content .content .read-more {
     position: relative;
@@ -1822,6 +1836,8 @@ a {
     width: 92px;
     padding: 0;
     margin-bottom: 17px;
+    height: 16px;
+    margin-top: 0;
   }
   .article-content .content .read-more label {
     padding: 0;
@@ -1831,10 +1847,13 @@ a {
     height: 20px;
     width: 20px;
     right: 0;
+    top: -2px;
+    margin-left: 8px;
   }
   .article-content .content .date label {
     position: relative;
     font-size: 12px;
+    margin-bottom: 15px;
   }
   .article-content .content .share {
     width: 16px;
@@ -1844,17 +1863,17 @@ a {
     background-repeat: no-repeat;
   }
   .section-3 {
-    margin-top: 83px;
+    margin-top: 80px;
 
     padding: 0;
 
-    height: 335px;
+    height: 315px;
     margin-bottom: 0;
   }
   .section-3 .popular-articles .title {
     position: relative;
     left: 0;
-
+    margin-bottom: 30px;
     padding: 4px 0;
   }
   .section-3 .popular-articles .slide-section {
@@ -1862,6 +1881,10 @@ a {
     overflow-x: hidden;
     overflow-y: clip;
   }
+  .section-3 .popular-articles .slide-hide-sec {
+    margin: 0;
+  }
+
   .section-3 .popular-articles .title .icon {
     width: 8px;
     height: 20px;
@@ -1969,7 +1992,7 @@ a {
 
   .popular-articles .slide-section {
     width: 1219px;
-    top: 60px;
+    top: 10px;
     overflow-x: hidden;
   }
   .popular-articles .slide-bar-mobile {
@@ -1991,9 +2014,9 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 236px;
-    height: 20px;
+    height: fit-content;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     top: 0;
   }
   .section-4 .title h3 {
@@ -2002,6 +2025,7 @@ a {
     top: 0;
     margin: auto 0;
     padding: 0;
+    line-height: 100%;
   }
   .section-4 .title .icon {
     position: static;
@@ -2033,7 +2057,7 @@ a {
   #footer {
     width: 100%;
     height: fit-content;
-    top: 80;
+    margin-top: 80px;
     background-size: cover;
     border-radius: 15px;
     background-image: url("/assets/Footer/Mask\ group1.png");
@@ -2185,8 +2209,20 @@ a {
     margin: auto;
     margin-top: 14px;
   }
+  .section-2 .header {
+    margin-bottom: 30px;
+  }
   .section-2 hr {
     display: none;
+  }
+  .container {
+    width: 80%;
+  }
+  .section-2 .articles {
+    width: 100%;
+  }
+  .article-content .article-item {
+    width: 100%;
   }
 
   #footer .footer-content .side-content {
@@ -2741,13 +2777,15 @@ a {
     border-radius: 15px;
   }
   .article-content .content {
-    position: absolute;
-    left: 20px;
+    position: relative;
+    height: 127px;
+    left: 0;
     width: 248px;
     margin: auto;
-    bottom: 20px;
-
-    height: fit-content;
+    bottom: 0;
+    margin-top: 20px;
+    border: none;
+    padding: 0;
   }
   .article-content .content .article-item {
     position: relative;
@@ -2758,24 +2796,27 @@ a {
     width: 100%;
     margin: 0;
   }
+  .article-content .content .title {
+    margin-top: 0;
+    height: 56px;
+    margin-bottom: 20px;
+  }
   .article-content .content .title h4 {
     position: relative;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
-
+    height: 56px;
     /* or 21px */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.08em;
     width: 248px;
 
     /* Kon */
-
     color: #373f66;
-    margin: px auto;
+
     top: 0;
     left: 0;
     margin-left: 0;
@@ -2784,21 +2825,25 @@ a {
   .article-content .content .read-more {
     position: relative;
     border-bottom: 1px #373f66 solid;
-    width: 92px;
+    width: fit-content;
     padding: 0;
-    margin-bottom: 12px;
+    height: 16px;
+    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
 
     bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .article-content .content .read-more label {
     position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
-    margin: auto 0;
+    margin: 0;
   }
   .article-content .content .read-more img {
     right: 0;
@@ -2808,14 +2853,18 @@ a {
   .article-content .content .date label {
     font-size: 14px;
     font-weight: 400;
+    margin-top: 0;
+    top: 0;
+    height: 10px;
   }
   .article-content .content .share {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     right: 0;
+    bottom: -2px;
   }
   .section-2 .article-content .col-1 {
     width: 288px;
@@ -2938,7 +2987,7 @@ a {
     top: 0;
     margin: 0;
     right: 0;
-    height: 470px;
+    height: 440px;
 
     margin-top: 120px;
   }
@@ -2993,7 +3042,7 @@ a {
     position: relative;
 
     width: 315px;
-    height: 346px;
+    height: 324px;
     margin: 0;
     margin-right: 20px;
 
@@ -3041,33 +3090,47 @@ a {
     margin-top: 120px;
   }
   .section-4 .title {
-    height: fit-content;
+    position: relative;
+    height: 30px;
     padding: 0;
     margin: 0;
     top: 0;
     bottom: 0;
     width: 373px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     left: 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  .section-4 .title h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    outline: 0;
+    border: 0;
+  }
   .section-4 .title .title_name {
     position: relative;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 150%;
+    /* line-height: 150%; */
     left: 10px;
+    height: 30px;
+    top: 0;
     margin-bottom: 0;
-    /* or 48px */
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
 
+    /* or 48px */
     letter-spacing: 0.08em;
+    margin-top: 0;
+    line-height: 100%;
 
     /* Kon */
-
     color: #373f66;
   }
   .section-4 .title .icon {
@@ -3075,11 +3138,12 @@ a {
     background-image: url("/assets/Articles/Rectangle\ 363.png");
     width: 10px;
     height: 30px;
-    margin: auto;
+    top: 0;
     font-size: 32px;
     line-height: 150%;
     left: 0;
     margin-bottom: 0;
+    margin: auto 0;
     /* or 48px */
 
     letter-spacing: 0.08em;

@@ -12,8 +12,8 @@
  
        next.addEventListener("click",()=>{
    
-       pos-=275;
-         if(pos==-1100){
+       pos-=245;
+         if(pos==-980){
    
           document.querySelector(".popular-articles .nav-btns #next").disabled = true;
            
@@ -36,7 +36,7 @@
          
          
        prev.addEventListener("click",()=>{
-         pos+=275;
+         pos+=245;
         
    
            if(pos==0){
