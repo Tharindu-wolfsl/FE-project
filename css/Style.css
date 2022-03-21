@@ -1383,9 +1383,10 @@ a {
   }
 
   .container {
-    width: 76.8%;
-    left: 0;
-    margin-left: 16px;
+    position: static;
+    width: 288px;
+   
+    
     margin: 0 auto;
     padding: 0;
   }
@@ -1395,7 +1396,7 @@ a {
     margin-top: 16px;
   }
   .header .logo {
-    position: absolute;
+    position: relative;
     width: 26px;
     height: 26px;
     margin: 0 0;
@@ -1416,17 +1417,19 @@ a {
   }
   .header .nav {
     background-color: transparent;
-    position: sticky;
-    margin-top: 50px;
-
+    position: fixed;
+    margin-top: 0;
+    top:0;
     height: 0;
-
-    width: 100%;
+    left:0;
+    width: 80%;
     box-shadow: 0 15px 25px 0.1;
 
     border-radius: 10px;
-    transition: 1s ease-out;
+    transition:0.5s ease-out;
     opacity: 0;
+    
+    z-index:11;
   }
 
   .header .nav ul.nav-items {
