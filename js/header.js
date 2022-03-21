@@ -1,9 +1,22 @@
 
-var menu=document.getElementById("header");
+var menu=document.getElementById("header");;
 
 
 
-var login=false;
+var loginbtn=document.getElementById("loginbtn");
+
+
+
+var login=true;
+
+// loginbtn.addEventListener("click",function () {
+
+// this.login=true;
+// alert(login);
+//   });
+
+
+
 
 
     if(login==true){

@@ -1350,7 +1350,6 @@ a {
     margin: 0;
     padding: 0;
     border: none;
-
     overflow-x: clip;
 
     /* background-color: #f9f9f9; */
@@ -1387,8 +1386,7 @@ a {
   .container {
     position: static;
     width: 288px;
-   
-    
+
     margin: 0 auto;
     padding: 0;
   }
@@ -1418,13 +1416,11 @@ a {
     display: block;
   }
   .header .nav {
-   
     position: fixed;
     margin-top: 0;
-    top:0;
+    top: 0;
     height: 0;
 
-    
     left: 0;
     box-shadow: 0 15px 25px 0.1;
 
@@ -1433,8 +1429,7 @@ a {
     opacity: 1;
     z-index: 11;
     margin-top: 0;
-    background: #F9F9F9;
-    
+    background: #f9f9f9;
   }
 
   .header .nav ul.nav-items {
@@ -1443,53 +1438,48 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
- 
+
     border-radius: 10px;
 
-    background: #F9F9F9;
-  
+    background: #f9f9f9;
+
     top: 0;
-    margin-top:64px;
+    margin-top: 64px;
     left: 0;
     margin-left: 0;
-  overflow-y: scroll;
-
-   
+    overflow-y: scroll;
+    display: none;
   }
   .header .nav ul.nav-items li {
-   margin-left: 17px;
-   margin-bottom: 22px;
+    margin-left: 17px;
+    margin-bottom: 22px;
 
     display: block;
   }
-  .header .nav ul.nav-items .mob-nav-btn .btn{
-  position: relative;
-  display: inline-block;
-  top: 0;
-  width:125px;
-  margin: 0;
-  padding: 0;
-   }
+  .header .nav ul.nav-items .mob-nav-btn .btn {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    width: 125px;
+    margin: 0;
+    padding: 0;
+  }
   .header .nav ul.nav-items .mob-nav-btn {
-  
     display: flex;
     width: 258px;
     flex-direction: row;
     justify-content: space-between;
-   
-  
+
     margin: 8px;
     margin-bottom: 23px;
-
-   }
-   .header .nav ul.nav-items .mob-nav-btn hr{
-  
-  border: 0.5px #E1E1E1 solid;
-  background-color: #E1E1E1;
-  padding: 0;
-  border-radius: 0.5px;
-  margin-top: 20px;
-   }
+  }
+  .header .nav ul.nav-items .mob-nav-btn hr {
+    border: 0.5px #e1e1e1 solid;
+    background-color: #e1e1e1;
+    padding: 0;
+    border-radius: 0.5px;
+    margin-top: 20px;
+  }
   .header .nav ul.nav-items li a:hover {
     color: #43e97b;
   }
