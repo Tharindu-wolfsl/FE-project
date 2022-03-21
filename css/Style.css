@@ -1363,6 +1363,7 @@ a {
     display: block;
   }
   #mob-nav-btn::before {
+    position: absolute;
     content: "Menu";
     width: 139px;
     height: 14px;
@@ -1371,6 +1372,7 @@ a {
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
+    top: -44px;
     /* or 30px */
 
     display: flex;
@@ -1416,39 +1418,78 @@ a {
     display: block;
   }
   .header .nav {
-    background-color: transparent;
+   
     position: fixed;
     margin-top: 0;
     top:0;
     height: 0;
-    left:0;
-    width: 80%;
+
+    
+    left: 0;
     box-shadow: 0 15px 25px 0.1;
 
     border-radius: 10px;
-    transition:0.5s ease-out;
-    opacity: 0;
+    transition: 1s ease-out;
+    opacity: 1;
+    z-index: 11;
+    margin-top: 0;
+    background: #F9F9F9;
     
-    z-index:11;
   }
 
   .header .nav ul.nav-items {
     position: relative;
+    width: 290px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: fit-content;
+ 
     border-radius: 10px;
 
-    background-color: rgba(255, 255, 255, 0.932);
-    width: 100%;
-    margin: auto auto;
+    background: #F9F9F9;
+  
+    top: 0;
+    margin-top:64px;
     left: 0;
+    margin-left: 0;
+  overflow-y: scroll;
+
+   
   }
   .header .nav ul.nav-items li {
-    margin: 25px 70px;
+   margin-left: 17px;
+   margin-bottom: 22px;
+
     display: block;
   }
+  .header .nav ul.nav-items .mob-nav-btn .btn{
+  position: relative;
+  display: inline-block;
+  top: 0;
+  width:125px;
+  margin: 0;
+  padding: 0;
+   }
+  .header .nav ul.nav-items .mob-nav-btn {
+  
+    display: flex;
+    width: 258px;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  
+    margin: 8px;
+    margin-bottom: 23px;
+
+   }
+   .header .nav ul.nav-items .mob-nav-btn hr{
+  
+  border: 0.5px #E1E1E1 solid;
+  background-color: #E1E1E1;
+  padding: 0;
+  border-radius: 0.5px;
+  margin-top: 20px;
+   }
   .header .nav ul.nav-items li a:hover {
     color: #43e97b;
   }
