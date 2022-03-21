@@ -3,6 +3,7 @@
 :root {
   --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   --border: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  --noto-sans: "Noto Sans JP", sans-serif;
 }
 
 * {
@@ -22,10 +23,146 @@ body {
   overflow-x: hidden;
   background-color: #f9f9f9;
 }
+#mob-nav-btn {
+  display: none;
+}
+/* #login {
+  display: none;
+} */
 
-button {
+#header input {
+  display: none;
+}
+#login {
+  display: none;
+}
+
+.after_login {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+
+  top: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  transition: all ease 0.5s;
+}
+[id^="btn-drop-1"]:checked + #drop-d-1 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease 0.5s;
+}
+[id^="btn-drop-2"]:checked + #drop-d-2 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease 0.5s;
+}
+[id^="btn-drop-3"]:checked + #drop-d-3 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease 0.5s;
+}
+[id^="btn-drop-4"]:checked + #drop-d-4 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease 0.5s;
+}
+.dropdown::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #ffffff;
+  top: -5px;
+  right: 20px;
+  transform: rotate(45deg);
+}
+.dropdown li {
+  margin: 0;
+  width: fit-content;
+  border: none;
+}
+.dropdown li a {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 150%;
+
+  /* identical to box height, or 18px */
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.08em;
+  border: none;
+
+  /* Kon */
+
+  color: #373f66;
+}
+.dropdown li :hover {
+  text-decoration: underline;
+}
+#drop-d-1 {
+  display: none;
+  width: 221px;
+  height: 96px;
+  left: 0;
+  left: 45;
+}
+#drop-d-1 li {
+  width: 221px;
+}
+#drop-d-2 {
+  display: none;
+  width: 156px;
+  height: 134px;
+  right: 0;
+  right: 55px;
+}
+#drop-d-2 li {
+  width: 156px;
+}
+#drop-d-3 {
+  display: none;
+  width: 195px;
+  height: 172px;
+  top: 65px;
+  right: -16;
+}
+
+#drop-d-3 li {
+  width: 195px;
+}
+#drop-d-4 {
+  display: none;
+  width: 195px;
+  height: 172px;
+  top: 65px;
+  right: -16;
+}
+#drop-d-4 li {
+  width: 195px;
+}
+#drop button {
   opacity: 0.7;
 }
+
 button:hover,
 a:hover {
   cursor: pointer;
@@ -72,6 +209,8 @@ a {
   width: 100%;
   margin-top: 30px;
   height: 40px;
+}
+.header #login {
 }
 .header .logo {
   position: absolute;
@@ -138,9 +277,6 @@ a {
 
 /* section-1 */
 
-.section-1 {
-  /* margin-bottom: 600px; */
-}
 .section-1 .main-bar {
   width: 1180px;
   height: 594px;
@@ -1134,7 +1270,7 @@ a {
   width: 100%;
   background: #e2edfe;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   bottom: 15px;
 }
 
@@ -1218,6 +1354,32 @@ a {
     overflow-x: clip;
 
     /* background-color: #f9f9f9; */
+  }
+  #header.sticky {
+    position: static;
+    background-color: none;
+  }
+  #mob-nav-btn {
+    display: block;
+  }
+  #mob-nav-btn::before {
+    content: "Menu";
+    width: 139px;
+    height: 14px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
 
   .container {
@@ -2246,6 +2408,16 @@ a {
 
     overflow-x: hidden;
   }
+  .header #login {
+    display: none;
+  }
+  #drop-d-3 {
+    display: none;
+    width: 195px;
+    height: 172px;
+    top: 53px;
+    right: -16;
+  }
 
   #image-raw {
     display: none;
@@ -2254,6 +2426,9 @@ a {
   .container {
     width: 904px;
     margin: 0 auto;
+  }
+  .after_login {
+    display: none;
   }
 
   .main-content {
@@ -2282,6 +2457,130 @@ a {
   #mobile {
     display: none;
   }
+  #drop-d-1 {
+    left: 0;
+    left: 41;
+  }
+  #drop-d-2 {
+    right: 0;
+    right: 53;
+  }
+
+  #drop-d-3 {
+    right: -6;
+    top: 0;
+    top: 56;
+  }
+
+  #header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    transition: all ease 0.5s;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    z-index: 5;
+    height: fit-content;
+  }
+  #header.sticky .header {
+    margin: auto 0;
+    height: 60px;
+  }
+  #header.sticky .logo {
+    top: 0;
+    margin-top: 17px;
+  }
+
+  #header.sticky .nav-btn {
+    display: none;
+  }
+  #header.sticky .nav-items {
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 20px;
+
+    margin-top: 0;
+    margin-top: 19px;
+    margin-left: 0;
+    left: 0;
+    left: 26px;
+
+    margin-left: 40px;
+  }
+  #header.sticky .nav-items .frame2 {
+    position: relative;
+
+    bottom: 0;
+    bottom: 3px;
+  }
+  #header.sticky .nav-items .frame-2-li img {
+    position: relative;
+    top: 0;
+
+    top: 1.5px;
+    margin-top: 1px;
+    left: 0;
+  }
+  #header.sticky .nav-items .frame6 {
+    position: relative;
+
+    bottom: 0;
+    bottom: 3px;
+  }
+  #header.sticky .nav-items .frame-6-li img {
+    position: relative;
+    top: 0;
+
+    top: 1.5px;
+    margin-top: 1px;
+  }
+  #not-login.not_login {
+    display: none;
+  }
+  #tab-login.tab_login .before_login {
+    display: none;
+  }
+  #tab-login.tab_login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #header.sticky #tab-login.tab_login {
+    margin-top: 15px;
+  }
+  #tab-login.tab_login .after_login {
+    position: relative;
+    display: block;
+    background: #4ac0b1;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  #tab-login.tab_login #login-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    top: 1.5px;
+    margin-left: 4px;
+  }
+
   .header {
     position: relative;
     height: 30px;
@@ -2392,9 +2691,12 @@ a {
   .header .login img {
     position: relative;
     top: 2px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 6px 8px;
     border-radius: 5px;
+  }
+  .header .login .before_login {
+    background-color: #ffffff;
   }
 
   .header .nav-btn button {
@@ -3360,6 +3662,93 @@ a {
   #mobile {
     display: none;
   }
+  #header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    height: 60px;
+
+    transition: all ease 0.5s;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    z-index: 5;
+    height: fit-content;
+  }
+  #header.sticky .logo {
+    margin: auto 0;
+  }
+  #header.sticky .nav-btn {
+    top: 16px;
+  }
+  #not-login.not_login {
+    display: none;
+  }
+  #login.login {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-top: 0;
+
+    top: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #login.login .nav-btn3 {
+    background: #4ac0b1;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    font-family: var(--noto-sans);
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* White */
+
+    color: #ffffff;
+    border: none;
+  }
+  #login.login .nav-btn3 img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  #login.login label {
+    margin: auto 0;
+  }
+
+  #login.login label img {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #header.sticky #login.login {
+    top: 12px;
+  }
+
   .container {
     width: 1180px;
     margin: 0 auto;

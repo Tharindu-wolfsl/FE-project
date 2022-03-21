@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="/css/all.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header">
+    <header id="header">
+      <div class="container" >
+        <div class="header" >
           <input type="checkbox" id="check" />              
           <label for="check" class="checkbox"
             ><img src="/assets/Footer/Layer 1.png" alt=""
@@ -31,15 +31,31 @@
           <div class="logo"></div>
           <nav id="mob-nav" class="nav">
             <ul class="nav-items">
+
+              <li class="mob-nav-btn" id="mob-nav-btn">
+
+                  <button class="btn nav-btn1">ログイン</button>
+                  <button class="btn nav-btn2">会員登録</button>
+             
+
+              </li>
               <li>
                 <a class="frame1" href="#">会員向けサービス</a>
               </li>
-              <li>
-                <a class="frame2" href="#">企業向けサービス</a
-                ><img
-                  src="./assets/SVGS/20px/right-arrow(no-line).svg"
-                  alt=""
-                />
+              <li class="frame-2-li">
+                <label for="btn-drop-1"> <a class="frame2">企業向けサービス</a
+                  ><img 
+                    src="./assets/SVGS/20px/right-arrow(no-line).svg"
+                    alt=""
+                  /></label>
+                  <input type="checkbox" name="btn-drop-1" id="btn-drop-1">
+
+                  <ul class="dropdown" id="drop-d-1">
+                    <li><a href="#">フリーランスに仕事を頼みたい</a></li>
+                    <li><a href="#">フリーランス協会に依頼したい</a></li>
+
+                  </ul>
+               
               </li>
               <li>
                 <a class="frame3" href="#">団体概要</a>
@@ -53,31 +69,58 @@
               <li>
                 <a href="fldblist.html">フリーランス DB</a>
               </li>
-              <li>
-                <a href="# " class="frame6">アーカイブ</a
-                ><img
-                  src="./assets/SVGS/20px/right-arrow(no-line).svg"
-                  alt=""
-                />
+              <li class="frame-6-li">
+                <label for="btn-drop-2"> <a class="frame6">アーカイブ</a
+                  ><img
+                    src="./assets/SVGS/20px/right-arrow(no-line).svg"
+                    alt=""
+                  /></label>
+                  <input type="checkbox" name="btn-drop-2" id="btn-drop-2">
+                  <ul class="dropdown" id="drop-d-2">
+                    <li><a href="#">フリーランス白書</a></li>
+                    <li><a href="#">独立・副業の手引き</a></li>
+                    <li><a href="#">活動報告書</a></li>
+
+                  </ul>
               </li>
               <li>
                 <a href="# ">お問合せ</a>
               </li>
             </ul>
           </nav>
-          <div class="login">
-            <img src="/assets/SVGS/Header/Group 126069.svg" alt="" />
-            <button type="button" id="login-drop"></button>
+          <div class="login" id="tab-login">
+            <img class="before_login" src="/assets/SVGS/Header/Group 126069.svg" alt="" />
+            <img class="after_login" src="/assets/SVGS/Login/Header/Group 126069.svg" alt="" />
+            <label for="btn-drop-3"><img src="/assets/SVGS/20px/right-arrow(no-line).svg" alt=""></label>
+            <input type="checkbox" name="btn-drop-3" id="btn-drop-3">
+            <ul class="dropdown" id="drop-d-3">
+              <li><a href="#">マイページ</a></li>
+              <li><a href="#">パスワード設定（再設定）</a></li>
+              <li><a href="#">一般会員登録</a></li>
+              <li><a href="#">ログアウト</a></li>
+
+            </ul>
+            
           </div>
-          <div class="nav-btn">
+          <div class="nav-btn" id="not-login">
             <button class="btn nav-btn1">ログイン</button>
             <button class="btn nav-btn2">会員登録</button>
           </div>
-          <!-- <div class="nav-btn-login">
+          <div class="nav-btn-login" id="login">
          
-            <button class="btn nav-btn2">会員登録</button>
-            <img src="#" alt="">
-          </div> -->
+            <button class="btn nav-btn3"><img src="/assets/SVGS/Login/Group 126069.svg" alt="">ゲスト</button>
+            <label for="btn-drop-4"> <img src="/assets/SVGS/20px/right-arrow(no-line).svg" alt=""></label>
+            <input type="checkbox" name="btn-drop-4" id="btn-drop-4">
+            <ul class="dropdown" id="drop-d-4">
+              <li><a href="#">マイページ</a></li>
+              <li><a href="#">パスワード設定（再設定）</a></li>
+              <li><a href="#">一般会員登録</a></li>
+              <li><a href="#">ログアウト</a></li>
+
+            </ul>
+            
+           
+          </div>
         </div>
         <!-- <div class="header-sticky" id="sticky-header">
 
