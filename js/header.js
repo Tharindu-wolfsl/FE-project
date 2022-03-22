@@ -23,6 +23,8 @@ var login=true;
         document.querySelector("#login").classList.add("login");
     document.querySelector("#not-login").classList.add("not_login");
     document.querySelector("#tab-login").classList.add("tab_login");
+    document.querySelector("#mob-nav-btn-2").classList.add("mob_login");
+    document.querySelector("#mob-nav-btn").classList.add("mob_not_login");
     }
     else{
     

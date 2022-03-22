@@ -30,22 +30,34 @@
           /></label>
           <div class="logo"></div>
           <nav id="mob-nav" class="nav">
-            <ul class="nav-items">
-              <!-- <label for="#" class="menu">Menu</label> -->
-              <li class="mob-nav-btn" id="mob-nav-btn">
+            <div class="close-btn" id="close-btn"><ion-icon name="close"></ion-icon></div>
+            <label for="#" class="menu">Menu</label>
+            <div class="mob-nav-btn" id="mob-nav-btn">
                  
-                  <button class="btn nav-btn1">ログイン</button>
-                  <button class="btn nav-btn2">会員登録</button>
-                  <hr/>
-             
+              <button class="btn nav-btn1">ログイン</button>
+              <button class="btn nav-btn2">会員登録</button>
+              <hr/>
+         
 
-              </li>
+            </div>
+            <div class="mob-nav-btn" id="mob-nav-btn-2">
+                 
+             <img src="/assets/SVGS/Mob-nav/Group 126069.svg" alt="">
+            <label for="arr-down-mob">ゲスト</label>
+              <img id="arr-down-mob" src="/assets/SVGS/20px/right-arrow(no-line).svg" alt="">
+              <hr/>
+         
+
+            </div>
+            <ul class="nav-items">
+              
+         
               <li>
                 <a class="frame1" href="#">会員向けサービス</a>
               </li>
               <li class="frame-2-li">
                 <label for="btn-drop-1"> <a class="frame2">企業向けサービス</a
-                  ><img 
+                  ><img id="arr-down-1"
                     src="./assets/SVGS/20px/right-arrow(no-line).svg"
                     alt=""
                   /></label>
@@ -72,7 +84,7 @@
               </li>
               <li class="frame-6-li">
                 <label for="btn-drop-2"> <a class="frame6">アーカイブ</a
-                  ><img
+                  ><img id="arr-down-2"
                     src="./assets/SVGS/20px/right-arrow(no-line).svg"
                     alt=""
                   /></label>
@@ -87,12 +99,14 @@
               <li>
                 <a href="# ">お問合せ</a>
               </li>
+
             </ul>
+            <img id="mob-nav-logo" src="/assets/SVGS/Mob-nav/Group 126024.svg" alt="">
           </nav>
           <div class="login" id="tab-login">
             <img class="before_login" src="/assets/SVGS/Header/Group 126069.svg" alt="" />
             <img class="after_login" src="/assets/SVGS/Login/Header/Group 126069.svg" alt="" />
-            <label for="btn-drop-3"><img src="/assets/SVGS/20px/right-arrow(no-line).svg" alt=""></label>
+            <label for="btn-drop-3"><img id="arr-down-3" src="/assets/SVGS/20px/right-arrow(no-line).svg" alt=""></label>
             <input type="checkbox" name="btn-drop-3" id="btn-drop-3">
             <ul class="dropdown" id="drop-d-3">
               <li><a href="#">マイページ</a></li>
@@ -130,7 +144,7 @@
         </div> -->
       </div>
     </header>
-    <section class="section-1">
+    <section id="section" class="section-1">
       <div class="container">
         <div class="main-bar">
           <div class="title">
@@ -392,7 +406,7 @@
         </div>
       </div>
     </section>
-    <section class="section-2">
+    <section  class="section-2">
       <div class="container">
         <div class="articles">
           <div class="head-title">

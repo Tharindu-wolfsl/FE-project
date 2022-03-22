@@ -23,7 +23,19 @@ body {
   overflow-x: hidden;
   background-color: #f9f9f9;
 }
+.menu {
+  display: none;
+}
+#close-btn {
+  display: none;
+}
 #mob-nav-btn {
+  display: none;
+}
+#mob-nav-logo {
+  display: none;
+}
+#mob-nav-btn-2 {
   display: none;
 }
 /* #login {
@@ -1395,6 +1407,44 @@ a {
     margin: 0;
     margin-top: 16px;
   }
+  #not-login.not_login {
+    display: none;
+  }
+  #tab-login.tab_login .before_login {
+    display: none;
+  }
+  #tab-login.tab_login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #header.sticky #tab-login.tab_login {
+    margin-top: 15px;
+  }
+  #tab-login.tab_login .after_login {
+    position: relative;
+    display: block;
+    background: #4ac0b1;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  #tab-login.tab_login #login-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    top: 1.5px;
+    margin-left: 4px;
+  }
+
   .header .logo {
     position: relative;
     width: 26px;
@@ -1419,16 +1469,16 @@ a {
     position: fixed;
     margin-top: 0;
     top: 0;
-    height: 0;
-
+    /* height: 0; */
+    height: 100vh;
     left: 0;
-    box-shadow: 0 15px 25px 0.1;
+    /* box-shadow: 0 15px 25px 0.1; */
 
     border-radius: 10px;
     transition: 1s ease-out;
     opacity: 1;
     z-index: 11;
-    margin-top: 0;
+
     background: #f9f9f9;
   }
 
@@ -1440,47 +1490,211 @@ a {
     justify-content: space-between;
 
     border-radius: 10px;
-
-    background: #f9f9f9;
-
+    height: 70vh;
     top: 0;
-    margin-top: 64px;
+
     left: 0;
     margin-left: 0;
     overflow-y: scroll;
-    display: none;
+    scrollbar-color: #4ac0b1;
+  }
+  .header .nav ul.nav-items::-webkit-scrollbar {
+    width: 4px;
+  }
+  /* .header .nav ul.nav-items::-webkit-scrollbar-track {
+    border-width: 20px;
+    background-color: #000000;
+  } */
+
+  .header .nav ul.nav-items::-webkit-scrollbar-thumb {
+    background: #4ac0b1;
+    border-radius: 10px;
+  }
+
+  .header .nav .menu {
+    display: block;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    top: 0;
+    margin-top: 20px;
+    margin-left: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    /* or 30px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
   .header .nav ul.nav-items li {
     margin-left: 17px;
-    margin-bottom: 22px;
+    margin-top: 22px;
 
     display: block;
   }
-  .header .nav ul.nav-items .mob-nav-btn .btn {
+  .header .nav .mob-nav-btn {
+    display: flex;
+    margin-top: 30px;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 17px;
+    height: fit-content;
+  }
+  .header .nav .mob-nav-btn .btn {
     position: relative;
     display: inline-block;
     top: 0;
     width: 125px;
+    font-family: var(--noto-sans);
     margin: 0;
     padding: 0;
-  }
-  .header .nav ul.nav-items .mob-nav-btn {
-    display: flex;
-    width: 258px;
-    flex-direction: row;
-    justify-content: space-between;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
 
-    margin: 8px;
-    margin-bottom: 23px;
+    /* identical to box height, or 18px */
+
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
   }
-  .header .nav ul.nav-items .mob-nav-btn hr {
+  .header .nav .mob-nav-btn .nav-btn2 {
+    margin-left: 8px;
+    color: #ffffff;
+  }
+
+  .header .nav .mob-nav-btn hr {
     border: 0.5px #e1e1e1 solid;
     background-color: #e1e1e1;
     padding: 0;
     border-radius: 0.5px;
     margin-top: 20px;
   }
+  .header .nav ul.nav-items li label {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  .header .nav ul.nav-items li a {
+    height: 20px;
+  }
+  .header .nav ul.nav-items li a {
+    font-family: var(--noto-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+    margin-right: 0;
+  }
   .header .nav ul.nav-items li a:hover {
+    color: #43e97b;
+  }
+  .header .nav ul.nav-items li img {
+    margin-left: 0;
+    left: 0;
+    margin-left: 4px;
+  }
+  .header .nav ul.nav-items .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+  }
+  #drop-d-1,
+  #drop-d-2,
+  #drop-d-3 {
+    background-color: transparent;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    margin-left: 13px;
+    margin-top: 17px;
+  }
+  [id^="btn-drop-1"]:checked + #arr-down-1 {
+    background-color: #000000 !important;
+    transform: rotate(-45deg) !important;
+  }
+  [id^="btn-drop-2"]:checked + #arr-down-2 {
+    transform: rotate(45deg);
+  }
+  [id^="btn-drop-3"]:checked + #arr-down-3 {
+    transform: rotate(45deg);
+  }
+  #mob-nav-logo {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .header .nav ul.nav-items .dropdown li {
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .header .nav ul.nav-items .dropdown li a {
+    height: fit-content;
+    font-family: var(--noto-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  #close-btn {
+    position: absolute;
+    display: block;
+    right: 0;
+    height: 34px;
+    width: 34px;
+
+    border: 5px #373f66 solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -16.5px;
+    top: 11.5px;
+    background-color: #f9f9f9;
+  }
+  #close-btn ion-icon {
     color: #43e97b;
   }
   .header .nav-btn {
