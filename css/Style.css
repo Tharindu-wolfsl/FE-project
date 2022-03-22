@@ -174,13 +174,16 @@ body {
 #drop button {
   opacity: 0.7;
 }
+#drop-d-5 {
+  display: none;
+}
 
 button:hover,
 a:hover {
   cursor: pointer;
 }
 .checkbox {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .main-content-1 {
   display: none;
@@ -225,7 +228,7 @@ a {
 .header #login {
 }
 .header .logo {
-  position: absolute;
+  /* position: absolute; */
   background-image: url("/assets/SVGS/image\ 49.svg");
   width: 26px;
   height: 26px;
@@ -1407,45 +1410,71 @@ a {
     margin: 0;
     margin-top: 16px;
   }
-  #not-login.not_login {
-    display: none;
+  #mob-nav-btn-2.mob_login {
+    display: block;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  #tab-login.tab_login .before_login {
-    display: none;
-  }
-  #tab-login.tab_login {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
 
+  #mob-nav-btn.mob_not_login {
+    display: none;
+  }
+  #mob-nav-btn-2 #login-set {
+    margin-left: 0;
+
+    width: 113px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  #header.sticky #tab-login.tab_login {
-    margin-top: 15px;
-  }
-  #tab-login.tab_login .after_login {
-    position: relative;
-    display: block;
+  #mob-nav-btn-2 #mob-logo {
+    padding: 10px 12px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #4ac0b1;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    height: 30px;
-    width: 30px;
   }
-  #tab-login.tab_login #login-drop {
+  #mob-nav-btn-2 label {
+    margin-left: 12px;
+    font-family: var(--noto-sans);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto 0;
-    top: 1.5px;
-    margin-left: 4px;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  #mob-nav-btn-2 #arr-down-mob {
+    height: 16px;
+    width: 16px;
+
+    margin-left: 3px;
+  }
+  #mob-nav-btn-2 hr {
+    margin-top: 0;
+    margin-top: 20px;
+    width: 258px;
+  }
+  #drop-d-5 {
+    position: relative;
+    margin: 0;
   }
 
-  .header .logo {
+  [id^="arr-down-mob"] .header .logo {
     position: relative;
     width: 26px;
     height: 26px;
@@ -1609,12 +1638,22 @@ a {
     margin-right: 0;
   }
   .header .nav ul.nav-items li a:hover {
-    color: #43e97b;
+    color: #df3888;
+    text-decoration: none;
   }
   .header .nav ul.nav-items li img {
     margin-left: 0;
     left: 0;
     margin-left: 4px;
+    height: 16px;
+    width: 16px;
+  }
+  .header .nav ul.nav-items li img {
+    margin-left: 0;
+    left: 0;
+    margin-left: 4px;
+    height: 16px;
+    width: 16px;
   }
   .header .nav ul.nav-items .dropdown {
     position: relative;
@@ -1626,6 +1665,11 @@ a {
     height: fit-content;
     width: fit-content;
   }
+  .dropdown li a:hover {
+    color: #df3888 !important;
+    text-decoration: none;
+  }
+
   #drop-d-1,
   #drop-d-2,
   #drop-d-3 {
@@ -1638,6 +1682,44 @@ a {
     margin-left: 13px;
     margin-top: 17px;
   }
+  #drop-d-5 {
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  #drop-d-5 li {
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  #drop-d-5 li a {
+    height: fit-content;
+    font-family: var(--noto-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Kon */
+
+    color: #373f66;
+  }
+  .dropdown::before {
+    display: none;
+  }
   [id^="btn-drop-1"]:checked + #arr-down-1 {
     background-color: #000000 !important;
     transform: rotate(-45deg) !important;
@@ -1648,6 +1730,10 @@ a {
   [id^="btn-drop-3"]:checked + #arr-down-3 {
     transform: rotate(45deg);
   }
+  [id^="#btn-drop-5"]:checked + #drop-d-5 {
+    display: block !important;
+  }
+
   #mob-nav-logo {
     display: block;
     position: absolute;

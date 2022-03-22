@@ -31,7 +31,8 @@ var login=true;
         document.querySelector("#not-login").classList.remove("not_login");
         document.querySelector("#login").classList.remove("login");
         document.querySelector("#tab-login").classList.remove("tab_login");
-   
+        document.querySelector("#mob-nav-btn-2").classList.remove("mob_login");
+        document.querySelector("#mob-nav-btn").classList.remove("mob_not_login");
     }
 
 
