@@ -293,13 +293,13 @@
             </div>
           </div>
 
-          <div class="content" style="background-color: black;">
+          <div class="content" >
             <div
               id="carouselExampleControls"
               class="carousel slide"
               data-bs-ride="carousel"
             >
-              <img
+              <img id="post-1-img"
                 src="./assets/unsplash_CPs2X8JYmS8.png"
                 class="d-block w-100"
                 alt="..."
@@ -317,7 +317,7 @@
                 </div>
               </div> -->
               <div class="prev-next">
-                <button id="post_next"
+                <button id="post_prev"
                   class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleControls"
@@ -331,7 +331,7 @@
                   />
                   <!-- <span class="visually-hidden"></span> -->
                 </button>
-                <button id="post_prev"
+                <button id="post_next"
                   class="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleControls"
@@ -347,7 +347,7 @@
                 </button>
               </div>
             </div>
-            <h3 onclick="location.href='#';" style="cursor: pointer;" title="click here">
+            <h3 id="post-1-title" onclick="location.href='#';" style="cursor: pointer;" title="click here">
               「複数の」ビジネスで働くためのフリーランス＆完全ガイドビジネスで働くためのフリーランス＆完全ガイド...
             </h3>
             <div class="read-more" onclick="location.href='#';" style="cursor: pointer;" title="click here">
@@ -355,7 +355,7 @@
               <img src="/assets/SVGS/right-arrow.svg" alt="" />
             </div>
             <div class="date">
-              <p>2022/01/27</p>
+              <p id="post-1-date">2022/01/27</p>
 
               <img onclick="location.href='#';" style="cursor: pointer;" title="click here" src="/assets/SVGS/30px/share.svg" alt="" />
             </div>
@@ -368,22 +368,22 @@
         <div class="side-bar">
           <div class="inner-side">
             <div class="content-box" onclick="location.href='#';" style="cursor: pointer;" title="click here">
-              <img src="./assets/Side bar/1.png" alt="" />
+              <img id="post-2-img" src="./assets/Side bar/1.png" alt="" />
               <div class="mid">
-                <h4>「複数の」ビジネスで働くためのためのた...</h4>
+                <h4 id="post-2-title">「複数の」ビジネスで働くためのためのた...</h4>
               <div class="read-more">
-                <p class="date">2022/01/27</p>
+                <p class="date" id="post-2-date">2022/01/27</p>
                 <div class="arrow"></div>
               </div>
               </div>
               
             </div>
             <div class="content-box" onclick="location.href='#';" style="cursor: pointer;" title="click here">
-              <img src="./assets/Side bar/2.png" alt="" />
+              <img id="post-3-img" src="./assets/Side bar/2.png" alt="" />
               <div class="mid">
-                <h4>「複数の」ビジネスで働くためのためのた...</h4>
+                <h4 id="post-3-title">「複数の」ビジネスで働くためのためのた...</h4>
                 <div class="read-more">
-                  <p class="date">2022/01/27</p>
+                  <p id="post-3-date" class="date">2022/01/27</p>
                   <div class="arrow"></div>
                 </div>
               </div>
@@ -391,22 +391,22 @@
           
             </div>
             <div class="content-box" onclick="location.href='#';" style="cursor: pointer;" title="click here">
-              <img src="./assets/Side bar/3.png" alt="" />
+              <img id="post-4-img" src="./assets/Side bar/3.png" alt="" />
               <div class="mid">
-                <h4>「複数の」ビジネスで働くためのためのた...</h4>
+                <h4 id="post-4-title">「複数の」ビジネスで働くためのためのた...</h4>
                 <div class="read-more">
-                  <p class="date">2022/01/27</p>
+                  <p id="post-3-date" class="date">2022/01/27</p>
                   <div class="arrow"></div>
                 </div>
               </div>
             
             </div>
             <div class="content-box" onclick="location.href='#';" style="cursor: pointer;" title="click here">
-              <img src="./assets/Side bar/4.png" alt="" />
+              <img id="post-5-img" src="./assets/Side bar/4.png" alt="" />
               <div class="mid">
-                <h4>「複数の」ビジネスで働くためのためのた...</h4>
+                <h4 id="post-5-title">「複数の」ビジネスで働くためのためのた...</h4>
                 <div class="read-more">
-                  <p class="date">2022/01/27</p>
+                  <p id="post-3-date" class="date">2022/01/27</p>
                   <div class="arrow"></div>
                 </div>
               </div>
@@ -1496,6 +1496,7 @@
     <script>
       document.getElementById("tab-1").focus();
     </script>
+    <script src="/js/swap.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
