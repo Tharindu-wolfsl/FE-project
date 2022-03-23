@@ -20,6 +20,37 @@ close_btn.addEventListener("click",function(){
 
 });
 
+btnDrop1.addEventListener('change',function(){
+    if(btnDrop1.checked==true){
+        document.querySelector('#arr-down-1').style.transform=("rotate(180deg)");
+    }else{
+
+        document.querySelector('#arr-down-1').style.transform=("rotate(0deg)");
+
+    }
+   
+});
+btnDrop2.addEventListener('change',function(){
+    if(btnDrop2.checked==true){
+        document.querySelector('#arr-down-2').style.transform=("rotate(180deg)");
+    }else{
+
+        document.querySelector('#arr-down-2').style.transform=("rotate(0deg)");
+
+    }
+   
+});
+btnDrop3.addEventListener('change',function(){
+    if(btnDrop3.checked==true){
+        document.querySelector('#arr-down-3').style.transform=("rotate(180deg)");
+    }else{
+
+        document.querySelector('#arr-down-3').style.transform=("rotate(0deg)");
+
+    }
+   
+});
+
 
 
 btn_drop.addEventListener('change',function(){
@@ -27,13 +58,13 @@ btn_drop.addEventListener('change',function(){
     if(btn_drop.checked==true){
 
         document.querySelector('#drop-d-5').style.display="block";
-        document.querySelector('#btn-drop-5').style.transform="rotate(45deg)";
+        document.querySelector('#arr-down-mob').style.transform="rotate(180deg)";
 
     }
     else{
 
         document.querySelector('#drop-d-5').style.display="none";
-        document.querySelector('#btn-drop-5').style.transform="rotate(-45deg)";
+        document.querySelector('#arr-down-mob').style.transform="rotate(0deg)";
     }
 
 
@@ -42,7 +73,9 @@ btn_drop.addEventListener('change',function(){
 cn.addEventListener("click",function(){
 
     document.getElementById("mob-nav").style.display="block";
+    // document.getElementById("mob-nav").style.transform="scale(100%)";
     document.querySelector(".blur-sec").style.display="block";
+
     
 
 
