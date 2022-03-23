@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
   background-color: #f9f9f9;
 }
+.blur-sec {
+  display: none;
+}
+
 .menu {
   display: none;
 }
@@ -183,7 +187,7 @@ a:hover {
   cursor: pointer;
 }
 .checkbox {
-  /* visibility: hidden; */
+  display: none;
 }
 .main-content-1 {
   display: none;
@@ -1369,6 +1373,17 @@ a {
 
     /* background-color: #f9f9f9; */
   }
+
+  .blur-sec {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #373f66ec;
+    z-index: 4;
+    backdrop-filter: blur(2px);
+  }
   #header.sticky {
     position: static;
     background-color: none;
@@ -1472,6 +1487,7 @@ a {
   #drop-d-5 {
     position: relative;
     margin: 0;
+    overflow-y: scroll;
   }
 
   [id^="arr-down-mob"] .header .logo {
@@ -1720,7 +1736,7 @@ a {
   .dropdown::before {
     display: none;
   }
-  [id^="btn-drop-1"]:checked + #arr-down-1 {
+  /* [id^="btn-drop-1"]:checked + #arr-down-1 {
     background-color: #000000 !important;
     transform: rotate(-45deg) !important;
   }
@@ -1732,7 +1748,7 @@ a {
   }
   [id^="#btn-drop-5"]:checked + #drop-d-5 {
     display: block !important;
-  }
+  } */
 
   #mob-nav-logo {
     display: block;
@@ -1788,7 +1804,7 @@ a {
   }
   .header .checkbox {
     position: relative;
-    visibility: visible;
+    display: block;
     padding: 0;
 
     float: right;
@@ -2922,6 +2938,9 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .header .logo {
+    position: absolute;
   }
   .header .nav-btn {
     position: absolute;
@@ -4089,6 +4108,9 @@ a {
   }
   .header {
     z-index: 1;
+  }
+  .header .logo {
+    position: absolute;
   }
   .header .nav .nav-items {
     width: 761px;
